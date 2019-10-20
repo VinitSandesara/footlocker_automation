@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>Footlocker</artifactId>
+        <groupId>Footlocker</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>DCT_FE_WEB</groupId>
+    <artifactId>DCT_FE_WEB</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>Common_Features_Across_All_Banners</module>
+        <module>FLCA_Specific_Features</module>
+    </modules>
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>Commons</groupId>
+            <artifactId>Commons</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+
+
+    </dependencies>
+
+
+</project>
