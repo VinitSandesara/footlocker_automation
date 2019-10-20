@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/Common_Features_Across_All_Banners.iml" filepath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/Common_Features_Across_All_Banners.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Commons/Commons.iml" filepath="$PROJECT_DIR$/Commons/Commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DCT_FE_WEB/DCT_FE_WEB.iml" filepath="$PROJECT_DIR$/DCT_FE_WEB/DCT_FE_WEB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DCT_FE_WEB/FLCA_Specific_Features/FLCA_Specific_Features.iml" filepath="$PROJECT_DIR$/DCT_FE_WEB/FLCA_Specific_Features/FLCA_Specific_Features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Footlocker.iml" filepath="$PROJECT_DIR$/Footlocker.iml" />
+    </modules>
+  </component>
+</project>

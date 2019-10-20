@@ -2,6 +2,10 @@
 Pre SSO Email Subject Label
 
     FS (FinalScore) : Complete your Final Score registration
+        Email Subject Keyword : registration
+
+    ES (EastBay) : Your Eastbay Registration
+        Email Subject Keyword : Registration
 
 
 Post SSO Email subject label

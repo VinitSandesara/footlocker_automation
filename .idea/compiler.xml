@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Common_Features_Across_All_Banners" />
+        <module name="Commons" />
+        <module name="FLCA_Specific_Features" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Common_Features_Across_All_Banners" target="1.8" />
+      <module name="Commons" target="1.8" />
+      <module name="DCT_FE_WEB" target="1.8" />
+      <module name="FLCA_Specific_Features" target="1.8" />
+      <module name="Footlocker" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
