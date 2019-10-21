@@ -3,6 +3,7 @@ package com.footlocker.steps;
 
 import EmailVerificationUtil.VerifyEmailThruRestApi;
 import GoogleApiUtil.GoogleSheetData;
+import Jenkins.JenkinsParamsVariable;
 import com.codeborne.selenide.Selenide;
 import com.footlocker.core.BaseSteps;
 import com.footlocker.pages.CreateAccountPage;
@@ -89,15 +90,27 @@ public class AccountSteps extends BaseSteps {
 
         And("^I input required fields data from excel sheet based on the specific row$", () ->
                 ((CreateAccountPage) page())
-                        .InputCreateAccountFieldsBasedOnSpecificExcelRowData(16, "NewUser_FS_EB"));
+                        .InputCreateAccountFieldsBasedOnSpecificExcelRowData(
+                                Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber),
+                                JenkinsParamsVariable.GoogleDriveSpreadSheetName));
+
         And("^I verify verification email received in given email domain and from that email i parse the html url thru which new user can be verified$", () ->
                 VerifyEmailThruRestApi.HitEmailDomainInbox_FetchEmailFromInbox_ParseClickHereUrlFromEmail(
-                        GoogleSheetData.getSpecificColFromGoogleSheet("NewUser_FS_EB", "C", 16),
-                        GoogleSheetData.getSpecificColFromGoogleSheet("NewUser_FS_EB", "H", 16),
+                        GoogleSheetData.getSpecificColFromGoogleSheet(
+                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
+                                "C",
+                                Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber)),
+
+                        GoogleSheetData.getSpecificColFromGoogleSheet(
+                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
+                                "H",
+                                Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber)),
                         ""));
 
         And("^Finally once user has successfully been registered i will highlight that specific row in excel sheet to filter out$", () ->
-                GoogleSheetData.HighlightRowOnceUserRegistered("NewUser_FS_EB", 16));
+                GoogleSheetData.HighlightRowOnceUserRegistered(
+                        JenkinsParamsVariable.GoogleDriveSpreadSheetName,
+                        Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber)));
 
 
     }

@@ -156,6 +156,11 @@
                         <TagName>${tag.name}</TagName>
                         <!--suppress UnresolvedMavenProperty -->
                         <BrowserType>${browser.type}</BrowserType>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <SpreadSheetName>${SpreadSheet.Name}</SpreadSheetName>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <SheetRowNumber>${SpreadSheet.Row}</SheetRowNumber>
+
                     </systemPropertyVariables>
 
 

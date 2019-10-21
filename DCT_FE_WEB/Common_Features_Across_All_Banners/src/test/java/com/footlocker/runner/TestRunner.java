@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
         monochrome = true,
-        plugin = {"pretty", "html:target/cucumber"},
+       	plugin = {"pretty","json:target/CucumberHtmlReport.json"},
         dryRun = false,
         strict = true,
         tags = "@Register_PostSSO_FS_EB_Single_User",

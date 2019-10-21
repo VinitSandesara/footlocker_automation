@@ -8,7 +8,7 @@ import cucumber.api.CucumberOptions;
         glue = {"com.footlocker.steps"},
         dryRun = false,
         monochrome = true,
-        plugin = {"pretty", "json:target/customgenericrunnerwithtag.json"}
+        plugin = {"pretty", "json:target/CucumberHtmlReport.json"}
 )
 public class CustomGenericRunnerWithTag extends CustomAbstractTestNGCucumberTestsWithTag {
 

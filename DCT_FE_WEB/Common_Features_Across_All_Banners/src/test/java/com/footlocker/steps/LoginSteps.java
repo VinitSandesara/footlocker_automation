@@ -1,5 +1,6 @@
 package com.footlocker.steps;
 
+import Jenkins.JenkinsParamsVariable;
 import com.footlocker.core.BaseSteps;
 import com.footlocker.pages.LoginPage;
 import com.footlocker.pages.RedirectionPage;
@@ -34,11 +35,17 @@ public class LoginSteps extends BaseSteps {
 
         And("^I input email data from excel sheet in email textbox$", () ->
                 ((LoginPage) page())
-                        .InputEmailTextbox("NewUser_FS_EB", "C", 16));
+                        .InputEmailTextbox(
+                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
+                                "C",
+                                Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber)));
 
         And("^I input password data from excel sheet in password textbox$", () ->
                 ((LoginPage) page())
-                        .InputPasswordTextbox("NewUser_FS_EB", "D", 16));
+                        .InputPasswordTextbox(
+                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
+                                "D",
+                                Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber)));
 
 
     }
