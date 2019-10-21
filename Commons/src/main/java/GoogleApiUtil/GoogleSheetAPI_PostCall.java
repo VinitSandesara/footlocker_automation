@@ -286,7 +286,7 @@ public class GoogleSheetAPI_PostCall {
     }
 
 
-    public static void main(String[] args) throws Exception {
+   /* public static void main(String[] args) throws Exception {
 
        // List<List<Object>> values = GoogleSheetAPI_PostCall.getResponse("Login","A1","G1").getValues();
         // GoogleSheetAPI_PostCall.setValue("Update", "A1", "A");
@@ -305,7 +305,7 @@ public class GoogleSheetAPI_PostCall {
         }
 
 
-    }
+    }*/
 
 
 }

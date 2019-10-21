@@ -7,6 +7,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.Arrays;
@@ -49,6 +50,9 @@ public class SelenideConfiguration {
         options.addArguments("--disable-popup-blocking");
         options.addArguments("chrome.switches", "--disable-extensions");
         options.setExperimentalOption("prefs", prefs);
+
+        options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+
         driver = new ChromeDriver(options);
         Configuration.timeout = 20000;
         Configuration.baseUrl = "https://www.staging2.origin.eastbay.com/";

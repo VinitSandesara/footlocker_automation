@@ -17,7 +17,7 @@ import static java.lang.Boolean.parseBoolean;
 public class Debug_Test {
 
 
-    public static void main(String[] args) throws InterruptedException {
+   /* public static void main(String[] args) throws InterruptedException {
 
 
         String range = "A2:H2";
@@ -62,7 +62,7 @@ public class Debug_Test {
         Thread.sleep(8000);
 
 
-    }
+    } */
 
 
 }

@@ -48,6 +48,11 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
             <groupId>ru.yandex.qatools.allure</groupId>
             <artifactId>allure-cucumber-jvm-adaptor</artifactId>
             <version>${allure-cucumber.version}</version>
@@ -128,16 +133,35 @@
     </dependencies>
 
     <build>
-        <defaultGoal>clean test</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.20</version>
+                <version>2.21.0</version>
+                <executions>
+                    <execution>
+                        <id>testngtest</id>
+                        <phase>test</phase>
+                    </execution>
+                </executions>
                 <configuration>
-
+                    <!-- <systemPropertyVariables> <IsGridSetup>${is.grid}</IsGridSetup>
+                        <HubUrl>${hub.url}</HubUrl> <FeatureName>${feature.name}</FeatureName> <TagName>${tag.name}</TagName>
+                        <BrowserType>${browser.type}</BrowserType> </systemPropertyVariables> -->
+                    <forkCount>3</forkCount> <!-- how many parallel vm get created and execute -->
+                    <reuseForks>false</reuseForks><!-- Every it will create a new vm for
+						the execution and will not use any existing -->
+                    <testFailureIgnore>true</testFailureIgnore><!-- The execution will continue
+						even if there is a test failure -->
+                    <includes> <!-- Specify the file name -->
+                        <!--suppress UnresolvedMavenProperty -->
+                        <include>${runner.name}</include><!-- This will include all the file
+							which has "Runner" as suffix in their name -->
+                    </includes>
+                    <suiteXmlFiles>
+                        <!-- <suiteXmlFile>${testngxml.location}/testng.xml</suiteXmlFile> -->
+                    </suiteXmlFiles>
                 </configuration>
-
             </plugin>
         </plugins>
     </build>
