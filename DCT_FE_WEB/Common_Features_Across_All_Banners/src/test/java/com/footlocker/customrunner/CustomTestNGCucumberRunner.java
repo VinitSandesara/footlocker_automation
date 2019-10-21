@@ -94,14 +94,14 @@ public class CustomTestNGCucumberRunner {
      */
 
     public List<CucumberFeature> getFeatures() {
-	    	/*List<CucumberFeature> modifiedList = getModifiedFeatureList();
-	    	for (CucumberFeature cucumberFeature : featureList) {
+	    	List<CucumberFeature> modifiedList = getModifiedFeatureList();
+	    	/*for (CucumberFeature cucumberFeature : featureList) {
 				if(value.equalsIgnoreCase(cucumberFeature.getGherkinFeature().getName())){
 					System.out.println( " Got the Object" );
 					modifiedList.add(cucumberFeature);
 				}
 			}*/
-        String value = System.getProperty("FeatureName");
+       /* String value = System.getProperty("FeatureName");
         List<CucumberFeature> featureList = runtimeOptions.cucumberFeatures(resourceLoader);
         List<CucumberFeature> modifiedList = getModifiedFeatureList();
         for (CucumberFeature cucumberFeature : featureList) {
@@ -109,7 +109,7 @@ public class CustomTestNGCucumberRunner {
                 System.out.println(" Got the Object");
                 modifiedList.add(cucumberFeature);
             }
-        }
+        }*/
 
 
         return modifiedList;
