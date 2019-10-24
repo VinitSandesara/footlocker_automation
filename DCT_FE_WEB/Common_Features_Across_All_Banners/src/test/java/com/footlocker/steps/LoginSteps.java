@@ -29,7 +29,10 @@ public class LoginSteps extends BaseSteps {
 
         And("^I click on Sign In button to login into an account$", () ->
                 ((LoginPage) page())
-                        .ClickSignInButton());
+                        .ClickSignInButton(
+                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
+                                "H",
+                                Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber)));
 
         /* ======= From this line below are from Jenkins ======== */
 

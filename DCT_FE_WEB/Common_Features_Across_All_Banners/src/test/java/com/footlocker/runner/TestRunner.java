@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
        	plugin = {"pretty","json:target/CucumberHtmlReport.json"},
         dryRun = false,
         strict = true,
-        tags = "@Register_Multiple_Users",
+        tags = "@Register_PostSSO_FL_KFL_FA_CS_Multi_User",
         features = "src/test/resources",
         glue = "com.footlocker.steps")
 

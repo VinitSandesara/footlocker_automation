@@ -18,8 +18,8 @@ public class AccountSteps extends BaseSteps {
 
     public AccountSteps() {
 
-      //  System.out.println("********* SHEET NAME ********" + JenkinsParamsVariable.GoogleDriveSpreadSheetName);
-      //  System.out.println("********* ROW ********" + JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber);
+        //  System.out.println("********* SHEET NAME ********" + JenkinsParamsVariable.GoogleDriveSpreadSheetName);
+        //  System.out.println("********* ROW ********" + JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber);
 
         Given("^I am on the home page$", () -> update(goToHomePage()));
 
@@ -53,6 +53,12 @@ public class AccountSteps extends BaseSteps {
         And("^I choose user as \"([^\"]*)\" from excel sheet \"([^\"]*)\"$", (String RadioSelection, String ExcelSheetName) ->
                 ((CreateAccountPage) page())
                         .RadioSelectionSkipVIPOptionOrClubRewardsOption(RadioSelection, ExcelSheetName));
+
+        And("^I choose an user selection for VIP ClubMember Or To Skip it$", () ->
+                ((CreateAccountPage) page())
+                        .RadioSelectionSkipVIPOptionOrClubRewardsOption(
+                                "I" + JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber + "",
+                                JenkinsParamsVariable.GoogleDriveSpreadSheetName));
 
         And("^I choose english language$", () ->
                 ((CreateAccountPage) page())
@@ -112,6 +118,11 @@ public class AccountSteps extends BaseSteps {
 
         And("^Finally once user has successfully been registered i will highlight that specific row in excel sheet to filter out$", () ->
                 GoogleSheetData.HighlightRowOnceUserRegistered(
+                        JenkinsParamsVariable.GoogleDriveSpreadSheetName,
+                        Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber)));
+
+        And("^Finally once user has successfully been registered i will move that specific row to registered user spreadsheet$", () ->
+                GoogleSheetData.CopySourceSheetDataToDestinationSheetOnceUserRegisteredSuccess(
                         JenkinsParamsVariable.GoogleDriveSpreadSheetName,
                         Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber)));
 

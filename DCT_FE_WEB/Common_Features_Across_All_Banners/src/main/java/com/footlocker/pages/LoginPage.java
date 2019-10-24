@@ -26,7 +26,7 @@ public class LoginPage extends BasePage {
     }
 
     public LoginPage InputEmailTextbox(String SheetName, String Col, int row) {
-      //  $(INPUT_EMAIL_TEXTBOX).val(GoogleSheetData.getSpecificRowColValueFromGoogleSheet(ExcelSheetName, Email));
+        //  $(INPUT_EMAIL_TEXTBOX).val(GoogleSheetData.getSpecificRowColValueFromGoogleSheet(ExcelSheetName, Email));
         $(INPUT_EMAIL_TEXTBOX).val(GoogleSheetData.getSpecificColFromGoogleSheet(SheetName, Col, row));
         return page(LoginPage.class);
     }
@@ -36,7 +36,7 @@ public class LoginPage extends BasePage {
         return page(LoginPage.class);
     }*/
 
-     public LoginPage InputPasswordTextbox(String Password, String ExcelSheetName) {
+    public LoginPage InputPasswordTextbox(String Password, String ExcelSheetName) {
         $(INPUT_PASSWORD_TEXTBOX).val(GoogleSheetData.getSpecificRowColValueFromGoogleSheet(ExcelSheetName, Password));
         return page(LoginPage.class);
     }
@@ -47,13 +47,15 @@ public class LoginPage extends BasePage {
     }
 
 
-    public HomePage ClickSignInButton() {
+    public HomePage ClickSignInButton(String SheetName, String Col, int row) {
 
-        // Post SSO
-        $(CLICK_SIGNIN_BUTTON).click();
-
-        // Pre sso
-       // $$(CLICK_SIGNIN_BUTTON).get(1).click();
+        if (GoogleSheetData.getSpecificColFromGoogleSheet(SheetName, Col, row).equalsIgnoreCase("Finish Activating Your Account")) {
+            // Post SSO
+            $(CLICK_SIGNIN_BUTTON).click();
+        } else {
+            // Pre sso
+            $$(CLICK_SIGNIN_BUTTON).get(1).click();
+        }
 
         return page(HomePage.class);
     }

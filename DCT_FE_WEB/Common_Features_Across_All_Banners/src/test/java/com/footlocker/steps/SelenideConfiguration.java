@@ -55,7 +55,7 @@ public class SelenideConfiguration {
 
         driver = new ChromeDriver(options);
         Configuration.timeout = 20000;
-        Configuration.baseUrl = "https://www.staging2.origin.final-score.com/";
+        Configuration.baseUrl = "https://www.staging2.origin.footlocker.com/";
         driver.get(Configuration.baseUrl);
         WebDriverRunner.setWebDriver(driver);
         System.out.println("");
