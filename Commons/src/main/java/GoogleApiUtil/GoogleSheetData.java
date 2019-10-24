@@ -14,6 +14,21 @@ public class GoogleSheetData {
     String password = "ToAutomateFL123";
     private static GoogleSheetAPI_GetCall sheetAPI;
 
+      public static void main(String[] args) throws Exception {
+
+          CopySourceSheetDataToDestinationSheetOnceUserRegisteredSuccess("NewUser_FS_EB",2);
+      }
+
+    public static void CopySourceSheetDataToDestinationSheetOnceUserRegisteredSuccess(String SheetName, int Row) {
+
+        try {
+            GoogleSheetAPI_PostCall.CopySpecificRowFromOneSheetToAnotherAtTheEnd(spreadsheetId, "Registered_" + SheetName, SheetName, Row);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 
     public static List<List<Object>> getGoogleSheetData(String SheetName, String FromRowToColSelection) {
         //Get data from sheet  and verify first profile info of john
@@ -30,7 +45,7 @@ public class GoogleSheetData {
     }
 
 
-   /*   public static List<List<Object>> getGoogleSheetFilledCellData(String SheetName) {
+    public static List<List<Object>> getGoogleSheetFilledCellData(String SheetName) {
         //Get data from sheet  and verify first profile info of john
         GoogleSheetAPI_GetCall sheetAPI = new GoogleSheetAPI_GetCall();
         List<List<Object>> values = null;
@@ -42,7 +57,7 @@ public class GoogleSheetData {
         return values;
 
 
-    } */
+    }
 
     public static List<List<Object>> getSpecificRowFromGoogleSheet(String SheetName, int row) {
 
@@ -106,7 +121,7 @@ public class GoogleSheetData {
 
     }
 
-    public static void HighlightRowOnceUserRegistered( String ExcelSheetName, int row) {
+    public static void HighlightRowOnceUserRegistered(String ExcelSheetName, int row) {
 
        /* List<String> list = new ArrayList<String>(Arrays.asList(FromRowToColSelection.split(":")));
 
@@ -120,7 +135,7 @@ public class GoogleSheetData {
                     row - 1,
                     row,
                     0,
-                    GoogleSheetAPI_PostCall.getResponse(ExcelSheetName,"A"+row+"", "G"+row+"").getValues().get(0).size()+1,
+                    GoogleSheetAPI_PostCall.getResponse(ExcelSheetName, "A" + row + "", "G" + row + "").getValues().get(0).size() + 1,
                     1091307946);
         } catch (IOException e) {
             e.printStackTrace();
@@ -128,7 +143,6 @@ public class GoogleSheetData {
 
 
     }
-
 
 
 }

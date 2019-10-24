@@ -132,6 +132,67 @@ public class GoogleSheetAPI_PostCall {
 
     }
 
+    public static void CopyAllDataFromOneSheetToAnother(String CopyDataFromSheet, String CopyDataToSheet, String RowStart, String RowEnd) throws IOException {
+        // Build a new authorized API client service.
+        Sheets service = getSheetsService();
+        // Prints the names and majors of students in a sample spreadsheet:
+        String spreadsheetId = "1OyDDGPtuDqdpTOQnt59cgf5WKjgb8cFHU5HyhYGFGKo";
+        String range = CopyDataToSheet + "!" + RowStart + ":" + RowEnd;
+
+        List<List<Object>> arrData = getAllDataFromSheet(CopyDataFromSheet, RowStart, RowEnd);
+
+        ValueRange oRange = new ValueRange();
+        oRange.setRange(range); // I NEED THE NUMBER OF THE LAST ROW
+        oRange.setValues(arrData);
+
+        List<ValueRange> oList = new ArrayList<>();
+        oList.add(oRange);
+
+        BatchUpdateValuesRequest oRequest = new BatchUpdateValuesRequest();
+        oRequest.setValueInputOption("RAW");
+        oRequest.setData(oList);
+
+
+        BatchUpdateValuesResponse oResp1 = service.spreadsheets().values()
+                .batchUpdate(spreadsheetId, oRequest).execute();
+
+
+    }
+
+
+    public static void CopySpecificRowFromOneSheetToAnotherAtTheEnd(String spreadsheetId,String SourceSheetName, String DestinationSheetName, int DestiSheetNameRowNumber) throws IOException {
+        // Build a new authorized API client service.
+        Sheets service = getSheetsService();
+        // Prints the names and majors of students in a sample spreadsheet:
+      //  String spreadsheetId = "1OyDDGPtuDqdpTOQnt59cgf5WKjgb8cFHU5HyhYGFGKo";
+
+        List<List<Object>> TotalRowsInSourceSheet = GoogleSheetAPI_PostCall.getResponse(SourceSheetName, "A1", "W100").getValues();
+
+        String SetDestiSheetRowValueToSourceSheetAtRange = SourceSheetName + "!" + "A" + (TotalRowsInSourceSheet.size() + 1) + "" + ":" + "W" + (TotalRowsInSourceSheet.size() + 1) + "";
+
+        List<List<Object>> arrData = getSpecificRowValues(DestinationSheetName, DestiSheetNameRowNumber);
+
+        ValueRange oRange = new ValueRange();
+        oRange.setRange(SetDestiSheetRowValueToSourceSheetAtRange); // I NEED THE NUMBER OF THE LAST ROW
+        oRange.setValues(arrData);
+
+        List<ValueRange> oList = new ArrayList<>();
+        oList.add(oRange);
+
+        BatchUpdateValuesRequest oRequest = new BatchUpdateValuesRequest();
+        oRequest.setValueInputOption("RAW");
+        oRequest.setData(oList);
+
+
+        BatchUpdateValuesResponse oResp1 = service.spreadsheets().values()
+                .batchUpdate(spreadsheetId, oRequest).execute();
+
+        // getSpcificRowToRemoveSheet(DestinationSheetName, DestiSheetNameRowNumber);
+        deleteRow(DestinationSheetName,DestiSheetNameRowNumber);
+
+
+    }
+
 
     public static void setValue(String SheetName, String RowStart, String RowEnd) throws IOException {
         // Build a new authorized API client service.
@@ -141,6 +202,9 @@ public class GoogleSheetAPI_PostCall {
         String range = RowStart + ":" + RowEnd;
 
         List<List<Object>> arrData = getData();
+
+        // If you want to copy all data from one sheet to another
+        // List<List<Object>> arrData = getAllData();
 
         ValueRange oRange = new ValueRange();
         oRange.setRange(range); // I NEED THE NUMBER OF THE LAST ROW
@@ -177,12 +241,157 @@ public class GoogleSheetAPI_PostCall {
     public static List<List<Object>> getData() {
 
         List<Object> data1 = new ArrayList<Object>();
-        data1.add("Viank Sandesara che");
+
+        try {
+            List<List<Object>> values = GoogleSheetAPI_PostCall.getResponse("Login", "A1", "G10").getValues();
+
+            return values;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+     /*   data1.add("Viank Sandesara che");
+        data1.add("Ankita Sandesara che");
 
         List<List<Object>> data = new ArrayList<List<Object>>();
-        data.add(data1);
+        data.add(data1);*/
 
-        return data;
+        return null;
+
+
+    }
+
+    public static List<List<Object>> getAllDataFromSheet(String copyDataFromSheet, String rowStart, String rowEnd) {
+
+
+        try {
+
+            List<List<Object>> values = GoogleSheetAPI_PostCall.getResponse(copyDataFromSheet, rowStart, rowEnd).getValues();
+            return values;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        return null;
+
+
+    }
+
+
+    public static List<List<Object>> getSpecificRowValues(String destinationSheetName, int destiSheetNameRowNumber) {
+
+        List<Object> data1 = new ArrayList<Object>();
+
+        try {
+
+            List<List<Object>> values = GoogleSheetAPI_PostCall.getResponse(destinationSheetName, "A" + destiSheetNameRowNumber + "", "W" + destiSheetNameRowNumber + "").getValues();
+            return values;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        return null;
+
+
+    }
+
+
+    public static void getSpcificRowToRemoveSheet(String destinationSheetName, int destiSheetNameRowNumber) throws IOException {
+
+        Sheets service = getSheetsService();
+        // Prints the names and majors of students in a sample spreadsheet:
+        String spreadsheetId = "1OyDDGPtuDqdpTOQnt59cgf5WKjgb8cFHU5HyhYGFGKo";
+
+        List<List<Object>> arrData = GoogleSheetAPI_PostCall.getResponse(destinationSheetName, "A1000", "W3000").getValues();
+
+        String SetDestiSheetRowValueToSourceSheetAtRange = destinationSheetName + "!" + "A" + destiSheetNameRowNumber + "" + ":" + "W" + destiSheetNameRowNumber + "";
+
+        ValueRange oRange = new ValueRange();
+        oRange.setRange(SetDestiSheetRowValueToSourceSheetAtRange); // I NEED THE NUMBER OF THE LAST ROW
+        oRange.setValues(null);
+
+        List<ValueRange> oList = new ArrayList<>();
+        oList.add(oRange);
+
+        BatchUpdateValuesRequest oRequest = new BatchUpdateValuesRequest();
+        oRequest.setValueInputOption("RAW");
+        oRequest.setData(oList);
+
+
+        BatchUpdateValuesResponse oResp1 = service.spreadsheets().values()
+                .batchUpdate(spreadsheetId, oRequest).execute();
+
+
+    }
+
+
+    public static void deleteRow(String SheetName ,Integer EndIndex) throws IOException {
+
+        Sheets service = getSheetsService();
+        // Prints the names and majors of students in a sample spreadsheet:
+        String spreadsheetId = "1OyDDGPtuDqdpTOQnt59cgf5WKjgb8cFHU5HyhYGFGKo";
+
+
+        Spreadsheet spreadsheet = null;
+        int SheetID = 0;
+        try {
+            spreadsheet = service.spreadsheets().get(spreadsheetId).execute();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+
+        for(int i=0;i<=spreadsheet.getSheets().size();i++) {
+            if(spreadsheet.getSheets().get(i).getProperties().getTitle().equalsIgnoreCase(SheetName)) {
+                 SheetID = spreadsheet.getSheets().get(i).getProperties().getSheetId();
+                 break;
+            }
+        }
+
+
+
+        String SetDestiSheetRowValueToSourceSheetAtRange = "Update!A3:B3";
+        BatchUpdateSpreadsheetRequest content = new BatchUpdateSpreadsheetRequest();
+
+        Request request = new Request();
+        DeleteDimensionRequest deleteDimensionRequest = new DeleteDimensionRequest();
+
+        DimensionRange dimensionRange = new DimensionRange();
+        dimensionRange.setDimension("ROWS");
+        dimensionRange.setStartIndex(EndIndex -1);
+        dimensionRange.setEndIndex(EndIndex);
+        dimensionRange.setSheetId(SheetID);
+
+        deleteDimensionRequest.setRange(dimensionRange);
+
+      /*  DeleteRangeRequest dr = new DeleteRangeRequest();
+
+
+       dr.setRange(new GridRange().setSheetId(0)
+                                .setStartRowIndex(2)
+                                .setEndRowIndex(3)
+                                .setStartColumnIndex(0)
+                                .setEndColumnIndex(3));*/
+
+        request.setDeleteDimension(deleteDimensionRequest);
+
+        List<Request> requests = new ArrayList<Request>();
+        requests.add(request);
+        content.setRequests(requests);
+
+        try {
+            service.spreadsheets().batchUpdate(spreadsheetId, content).execute();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            dimensionRange = null;
+            deleteDimensionRequest = null;
+            request = null;
+            requests = null;
+            content = null;
+        }
     }
 
 
@@ -286,12 +495,20 @@ public class GoogleSheetAPI_PostCall {
     }
 
 
-   /* public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
 
-       // List<List<Object>> values = GoogleSheetAPI_PostCall.getResponse("Login","A1","G1").getValues();
-        // GoogleSheetAPI_PostCall.setValue("Update", "A1", "A");
+
+        /* Copy all data from source to destination */
+        // GoogleSheetAPI_PostCall.CopyAllDataFromOneSheetToAnother("Login","Update", "A1", "W100");
+
+        /* Copy specific row from source to destination */
+       // GoogleSheetAPI_PostCall.CopySpecificRowFromOneSheetToAnotherAtTheEnd("Login", "Update", 6);
+
+        /* Copy specific row from source to destination and delete copied row from source */
+
+
         // GoogleSheetAPI_PostCall.HighlightRowOnceUserRegistered("1OyDDGPtuDqdpTOQnt59cgf5WKjgb8cFHU5HyhYGFGKo",1,2,0,8,1091307946);
-        int row = 4;
+      /*  int row = 4;
         List<List<Object>> values = GoogleSheetAPI_PostCall.getResponse("Login", "A"+row+"", "G"+row+"").getValues();
 
         int count = values.get(0).size();
@@ -302,10 +519,13 @@ public class GoogleSheetAPI_PostCall {
             System.out.println("Your values ==>>" + val.get(0));
             System.out.println("Your values ==>>" + val.get(1));
             System.out.println("Your values ==>>" + val.get(2));
-        }
+        }*/
 
 
-    }*/
+
+
+
+    }
 
 
 }

@@ -78,6 +78,20 @@ public class CreateAccountPage extends BasePage {
 
     }
 
+    public CreateAccountPage MultiUser_FillRequiredNewUserRegistrationForm(String Firstname, String Lastname, String Email, String Pass, String DOB_MM, String DOB_DD, String DOB_YYYY) {
+
+        $(CREATE_USER_FIRSTNAME_TEXTBOX).val(Firstname);
+        $(CREATE_USER_LASTNAME_TEXTBOX).val(Lastname);
+        $(CREATE_USER_EMAIL_TEXTBOX).val(Email);
+        $(CREATE_USER_PASSWORD_TEXTBOX).val(Pass);
+        $(CREATE_USER_DOB_MM_TEXTBOX).val(DOB_MM);
+        $(CREATE_USER_DOB_DD_TEXTBOX).val(DOB_DD);
+        $(CREATE_USER_DOB_YYYY_TEXTBOX).val(DOB_YYYY);
+
+        return page(CreateAccountPage.class);
+
+    }
+
 
     public CreateAccountPage RadioSelectionSkipVIPOptionOrClubRewardsOption() {
 

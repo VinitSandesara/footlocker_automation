@@ -18,8 +18,8 @@ public class AccountSteps extends BaseSteps {
 
     public AccountSteps() {
 
-        System.out.println("********* SHEET NAME ********" + JenkinsParamsVariable.GoogleDriveSpreadSheetName);
-        System.out.println("********* ROW ********" + JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber);
+      //  System.out.println("********* SHEET NAME ********" + JenkinsParamsVariable.GoogleDriveSpreadSheetName);
+      //  System.out.println("********* ROW ********" + JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber);
 
         Given("^I am on the home page$", () -> update(goToHomePage()));
 

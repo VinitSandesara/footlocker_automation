@@ -47,7 +47,7 @@ public class LoginPage extends BasePage {
     }
 
 
-    public LoginPage ClickSignInButton() {
+    public HomePage ClickSignInButton() {
 
         // Post SSO
         $(CLICK_SIGNIN_BUTTON).click();
@@ -55,7 +55,7 @@ public class LoginPage extends BasePage {
         // Pre sso
        // $$(CLICK_SIGNIN_BUTTON).get(1).click();
 
-        return page(LoginPage.class);
+        return page(HomePage.class);
     }
 
 

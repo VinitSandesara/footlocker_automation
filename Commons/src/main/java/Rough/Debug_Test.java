@@ -17,7 +17,7 @@ import static java.lang.Boolean.parseBoolean;
 public class Debug_Test {
 
 
-   /* public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
 
 
         String range = "A2:H2";
@@ -44,6 +44,8 @@ public class Debug_Test {
         Configuration.baseUrl = "https://www.footlocker.com/";
         Selenide.open(Configuration.baseUrl);
 
+        $(By.id("accountActions")).click();
+        $(By.xpath("//button[contains(text(),'Sign Out')]")).click();
 
         //Thread.sleep(5000);
 
@@ -62,7 +64,7 @@ public class Debug_Test {
         Thread.sleep(8000);
 
 
-    } */
+    }
 
 
 }

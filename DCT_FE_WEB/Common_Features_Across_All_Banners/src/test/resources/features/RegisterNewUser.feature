@@ -32,14 +32,20 @@ Feature: Account
 
 
 
-  @Register_New_User_For_FL_KFL_FA_CS_Single_User
+  #@Register_New_User_For_FL_KFL_FA_CS_Single_User
 
+  @Register_PostSSO_FS_EB_Multi_User
+  Scenario: Register Multiple users
 
-
-
-
-
-
+    Given I am on the home page
+    When I click on Login Link
+    Then It should give you Sign In Dialog box
+    And I click on Create an account link
+    Then It should redirects to Create Account page
+  """
+  Create Account
+  """
+    And I register multiple users in one go which are mentioned in google spreadsheet
 
 
 
