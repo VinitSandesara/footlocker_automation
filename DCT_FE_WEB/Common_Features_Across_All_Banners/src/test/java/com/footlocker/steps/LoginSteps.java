@@ -1,5 +1,6 @@
 package com.footlocker.steps;
 
+import GoogleApiUtil.GoogleSheetData;
 import Jenkins.JenkinsParamsVariable;
 import com.footlocker.core.BaseSteps;
 import com.footlocker.pages.LoginPage;
@@ -30,9 +31,10 @@ public class LoginSteps extends BaseSteps {
         And("^I click on Sign In button to login into an account$", () ->
                 ((LoginPage) page())
                         .ClickSignInButton(
-                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                "H",
-                                Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber)));
+                                GoogleSheetData.getCellValueBasedOnColumnName(
+                                        JenkinsParamsVariable.GoogleDriveSpreadSheetName,
+                                        Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber),
+                                        "EmailSubject")));
 
         /* ======= From this line below are from Jenkins ======== */
 
@@ -49,6 +51,22 @@ public class LoginSteps extends BaseSteps {
                                 JenkinsParamsVariable.GoogleDriveSpreadSheetName,
                                 "D",
                                 Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber)));
+
+        And("^I input \"([^\"]*)\" data from excel sheet in email textbox$", (String Email) ->
+                ((LoginPage) page())
+                        .InputEmailTextbox(
+                                GoogleSheetData.getCellValueBasedOnColumnName(
+                                        JenkinsParamsVariable.GoogleDriveSpreadSheetName,
+                                        Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber),
+                                        Email)));
+
+        And("^I input \"([^\"]*)\" data from excel sheet in password textbox$", (String Pass) ->
+                ((LoginPage) page())
+                        .InputPasswordTextbox(
+                                GoogleSheetData.getCellValueBasedOnColumnName(
+                                        JenkinsParamsVariable.GoogleDriveSpreadSheetName,
+                                        Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber),
+                                        Pass)));
 
 
     }

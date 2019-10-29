@@ -7,6 +7,29 @@ Pre SSO Email Subject Label
     ES (EastBay) : Your Eastbay Registration
         Email Subject Keyword : Registration
 
+    FL(FootLocker)
+        VIP, NON-VIP : Your Foot Locker Regist ration – One Last Step!
+        Email Subject Keyword : One Last Step!
+
+    LFL (LadyFootLocker)
+        FLX  : Validate your new FLX account to get rewards.
+        Email Subject Keyword : Validate your new FLX account
+
+        Non-FLX : Your Lady Foot Locker Reg istration – One Last Step!
+        Email Subject Keyword : One Last Step!
+
+    KFL (KidsFootLocker)
+        VIP, NON-VIP : Your Kids Foot Locker Reg istration – One Last Step!
+        Email Subject Keyword : One Last Step!
+
+    FA (FinalAction)
+        Club, Non-Club : Your Footaction Regist ration – One Last Step!
+        Email Subject Keyword : One Last Step!
+
+    CS (ChampsSports)
+        Vip, Non-Vip : Your Champs Sports Registration – One Last Step!
+        Email Subject Keyword : One Last Step!
+
 
 Post SSO Email subject label
 

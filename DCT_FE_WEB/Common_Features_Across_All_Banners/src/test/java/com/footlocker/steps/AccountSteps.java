@@ -4,6 +4,7 @@ package com.footlocker.steps;
 import EmailVerificationUtil.VerifyEmailThruRestApi;
 import GoogleApiUtil.GoogleSheetData;
 import Jenkins.JenkinsParamsVariable;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.footlocker.core.BaseSteps;
 import com.footlocker.pages.CreateAccountPage;
@@ -21,7 +22,16 @@ public class AccountSteps extends BaseSteps {
         //  System.out.println("********* SHEET NAME ********" + JenkinsParamsVariable.GoogleDriveSpreadSheetName);
         //  System.out.println("********* ROW ********" + JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber);
 
-        Given("^I am on the home page$", () -> update(goToHomePage()));
+        Given("^I am on the home page$", () -> {
+            Configuration.baseUrl = GoogleSheetData.getCellValueBasedOnColumnName(
+                    JenkinsParamsVariable.GoogleDriveSpreadSheetName,
+                    Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber),
+                    "Banner"
+            );
+
+            SelenideConfiguration.driver.get(Configuration.baseUrl);
+            update(goToHomePage());
+        });
 
         When("^I click on Login Link$", () ->
                 ((HomePage) page())
@@ -50,15 +60,19 @@ public class AccountSteps extends BaseSteps {
                 ((CreateAccountPage) page())
                         .RadioSelectionSkipVIPOptionOrClubRewardsOption());*/
 
-        And("^I choose user as \"([^\"]*)\" from excel sheet \"([^\"]*)\"$", (String RadioSelection, String ExcelSheetName) ->
+      /*  And("^I choose user as \"([^\"]*)\" from excel sheet \"([^\"]*)\"$", (String RadioSelection, String ExcelSheetName) ->
                 ((CreateAccountPage) page())
-                        .RadioSelectionSkipVIPOptionOrClubRewardsOption(RadioSelection, ExcelSheetName));
+                        .RadioSelectionSkipVIPOptionOrClubRewardsOption(RadioSelection, ExcelSheetName));*/
 
-        And("^I choose an user selection for VIP ClubMember Or To Skip it$", () ->
+        And("^I choose an user selection for \"([^\"]*)\"$", (String UserRadioSelection) ->
                 ((CreateAccountPage) page())
                         .RadioSelectionSkipVIPOptionOrClubRewardsOption(
-                                "I" + JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber + "",
-                                JenkinsParamsVariable.GoogleDriveSpreadSheetName));
+                                GoogleSheetData.getCellValueBasedOnColumnName(
+                                        JenkinsParamsVariable.GoogleDriveSpreadSheetName,
+                                        Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber),
+                                        UserRadioSelection
+                                )));
+
 
         And("^I choose english language$", () ->
                 ((CreateAccountPage) page())
@@ -96,13 +110,21 @@ public class AccountSteps extends BaseSteps {
 
         /* ======= From this line below are from Jenkins ======== */
 
-
+        // OLD
         And("^I input required fields data from excel sheet based on the specific row$", () ->
                 ((CreateAccountPage) page())
                         .InputCreateAccountFieldsBasedOnSpecificExcelRowData(
                                 Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber),
                                 JenkinsParamsVariable.GoogleDriveSpreadSheetName));
+        // New
+        And("^I input required fields which are \"([^\"]*)\" data from excel sheet$", (String ListOfRequiredFields) ->
+                ((CreateAccountPage) page())
+                        .InputCreateAccountFieldsBasedOnSpecificExcelRowData(
+                                Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber),
+                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
+                                ListOfRequiredFields));
 
+        // OLD
         And("^I verify verification email received in given email domain and from that email i parse the html url thru which new user can be verified$", () ->
                 VerifyEmailThruRestApi.HitEmailDomainInbox_FetchEmailFromInbox_ParseClickHereUrlFromEmail(
                         GoogleSheetData.getSpecificColFromGoogleSheet(
@@ -116,6 +138,22 @@ public class AccountSteps extends BaseSteps {
                                 Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber)),
                         ""));
 
+        And("^I verify \"([^\"]*)\" received with \"([^\"]*)\" in given email domain and from that email i parse the html url thru which new user can be verified$", (String Email, String EmailSubject) ->
+                VerifyEmailThruRestApi.HitEmailDomainInbox_FetchEmailFromInbox_ParseClickHereUrlFromEmail(
+                        GoogleSheetData.getCellValueBasedOnColumnName(
+                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
+                                Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber),
+                                Email),
+
+                        GoogleSheetData.getCellValueBasedOnColumnName(
+                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
+                                Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber),
+                                EmailSubject),
+
+                        JenkinsParamsVariable.GoogleDriveSpreadSheetName
+                ));
+
+
         And("^Finally once user has successfully been registered i will highlight that specific row in excel sheet to filter out$", () ->
                 GoogleSheetData.HighlightRowOnceUserRegistered(
                         JenkinsParamsVariable.GoogleDriveSpreadSheetName,
@@ -125,6 +163,9 @@ public class AccountSteps extends BaseSteps {
                 GoogleSheetData.CopySourceSheetDataToDestinationSheetOnceUserRegisteredSuccess(
                         JenkinsParamsVariable.GoogleDriveSpreadSheetName,
                         Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber)));
+
+
+
 
 
     }

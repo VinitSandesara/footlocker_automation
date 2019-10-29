@@ -1,9 +1,11 @@
 package com.footlocker.steps;
 
 import GoogleApiUtil.GoogleSheetAPI_GetCall;
+import Jenkins.JenkinsParamsVariable;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
 import com.vimalselvam.cucumber.listener.Reporter;
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
@@ -21,7 +23,7 @@ public class Hooks {
 
     @Before
     public void BeforeScenario() {
-        selenideConfiguration.getBrowser();
+        selenideConfiguration.getBrowser(JenkinsParamsVariable.TagName);
 
        /* InputStream in =
                 Hooks.class.getResourceAsStream("/extent-config.xml");

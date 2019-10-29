@@ -9,8 +9,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,11 +25,14 @@ public class SelenideConfiguration {
     private final String REPORTS_FOLDER = "target";
     public static WebDriver driver;
 
-    public void getBrowser() {
+    public static final String USERNAME = "feqa7";
+    public static final String AUTOMATE_KEY = "tpB1N7Jtzs4ecuWy5JqB";
+    public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
-        /* To Disable location popup */
-        Map<String, Object> prefs = new HashMap<String, Object>();
-        prefs.put("profile.default_content_setting_values.notifications", 2);
+    public void getBrowser(String TestCaseName) {
+
+
+
 
     /* Options :1
         String browser = System.getProperty("selenide.browser", "chrome");
@@ -43,22 +50,62 @@ public class SelenideConfiguration {
 
 
 
-        /* Option : 2 */
+        /* Option : 2
+        Map<String, Object> prefs = new HashMap<String, Object>();
+        prefs.put("profile.default_content_setting_values.notifications", 2);
+
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
-        options.addArguments("--disable-popup-blocking");
         options.addArguments("chrome.switches", "--disable-extensions");
         options.setExperimentalOption("prefs", prefs);
-
         options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+        options.setExperimentalOption("useAutomationExtension", false);
+        options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+
 
         driver = new ChromeDriver(options);
         Configuration.timeout = 20000;
-        Configuration.baseUrl = "https://www.staging2.origin.footlocker.com/";
-        driver.get(Configuration.baseUrl);
+      //  Configuration.baseUrl = "https://www.staging2.origin.footlocker.com/";
+      //  driver.get(Configuration.baseUrl);
         WebDriverRunner.setWebDriver(driver);
-        System.out.println("");
+        System.out.println(""); */
+
+
+        /* Option 3 - BrowserStack */
+
+        DesiredCapabilities caps = new DesiredCapabilities();
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
+        options.addArguments("--start-maximized");
+        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+        caps.setCapability(ChromeOptions.CAPABILITY, options);
+
+
+        caps.setCapability("browser", "Chrome");
+        caps.setCapability("browser_version", "70.0");
+        caps.setCapability("os", "OS X");
+        caps.setCapability("os_version", "Mojave");
+        // caps.setCapability("resolution", "1024x768");
+        caps.setCapability("browserstack.debug", "true");
+        caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+        caps.setCapability("build", "New_User_Register");
+        caps.setCapability("name", TestCaseName);
+
+
+        try {
+            driver = new RemoteWebDriver(new URL(URL), caps);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+
+        Configuration.timeout = 20000;
+       /* Configuration.baseUrl = "https://www.staging2.origin.footlocker.com/";
+        driver.get(Configuration.baseUrl);
+        driver.navigate().refresh(); */
+        WebDriverRunner.setWebDriver(driver);
+
 
     }
 

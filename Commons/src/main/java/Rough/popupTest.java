@@ -17,7 +17,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class popupTest {
 
-  /*  public static WebDriver driver;
+    public static WebDriver driver;
 
     public static void main(String[] args) {
 
@@ -55,7 +55,7 @@ public class popupTest {
         WebDriverRunner.getWebDriver().quit();
 
 
-    }*/
+    }
 
 
 }

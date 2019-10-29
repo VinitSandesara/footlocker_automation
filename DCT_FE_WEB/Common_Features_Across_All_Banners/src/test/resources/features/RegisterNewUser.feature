@@ -1,5 +1,7 @@
-Feature: Account
+Feature: New User Registration
 
+
+# ========= POST SSO =============
 
   @Register_PostSSO_FS_EB_Single_User
   Scenario: Register post SSO ES or EB or both single user
@@ -12,24 +14,69 @@ Feature: Account
   """
   Create Account
   """
-    And I input required fields data from excel sheet based on the specific row
+    And I input required fields which are "FirstName,LastName,Email,Password,DOB_MM,DOB_DD,DOB_YYYY" data from excel sheet
     And I click on Create an account button
     Then It should redirects to Almost Done page
   """
   Almost Done
   """
-    And I verify verification email received in given email domain and from that email i parse the html url thru which new user can be verified
+    And I verify "Email" received with "EmailSubject" in given email domain and from that email i parse the html url thru which new user can be verified
     When I navigate to the url fetched from email to validate the user
     Then It should redirects to Success page
   """
   Success!
   """
 
-    And I input email data from excel sheet in email textbox
-    And I input password data from excel sheet in password textbox
+    And I input "Email" data from excel sheet in email textbox
+    And I input "Password" data from excel sheet in password textbox
     And I click on Sign In button to login into an account
     And Finally once user has successfully been registered i will move that specific row to registered user spreadsheet
 
+
+  @Register_PostSSO_For_FL_KFL_FA_CS_Single_User
+  Scenario: Register post SSO ES or EB or both single user
+
+    Given I am on the home page
+    When I click on Login Link
+    Then It should give you Sign In Dialog box
+    And I click on Create an account link
+    Then It should redirects to Create Account page
+  """
+  Create Account
+  """
+    And I input required fields which are "FirstName,LastName,Email,Password,DOB_MM,DOB_DD,DOB_YYYY" data from excel sheet
+    And I choose an user selection for "VIP_ClubRewards_Or_Skip"
+    And I click on Create an account button
+    Then It should redirects to Almost Done page
+  """
+  Almost Done
+  """
+    And I verify "Email" received with "EmailSubject" in given email domain and from that email i parse the html url thru which new user can be verified
+    When I navigate to the url fetched from email to validate the user
+    Then It should redirects to Success page
+  """
+  Success!
+  """
+
+    And I input "Email" data from excel sheet in email textbox
+    And I input "Password" data from excel sheet in password textbox
+    And I click on Sign In button to login into an account
+    And Finally once user has successfully been registered i will move that specific row to registered user spreadsheet
+
+
+# ========= POST SSO MULTI USERS CREATION =============
+
+  @Register_PostSSO_FS_EB_Multi_User
+  Scenario: Register Multiple users for banners FS and EB
+    Given I register multiple users for banners FS and EB in one go which are mentioned in google spreadsheet
+
+
+  @Register_PostSSO_FL_KFL_FA_CS_Multi_User
+  Scenario: Register Multiple users for banners FL, LFL, FA and CS
+    Given I register multiple users for banners FL, LFL, FA and CS in one go which are mentioned in google spreadsheet
+
+
+# ========= PRE SSO =============
 
   @Register_PreSSO_FS_EB_Single_User
   Scenario: Register post SSO ES or EB or both single user
@@ -62,156 +109,10 @@ Feature: Account
 
 
 
-  #@Register_New_User_For_FL_KFL_FA_CS_Single_User
-
-  @Register_PostSSO_FS_EB_Multi_User
-  Scenario: Register Multiple users
-
-    Given I am on the home page
-    When I click on Login Link
-    Then It should give you Sign In Dialog box
-    And I click on Create an account link
-    Then It should redirects to Create Account page
-  """
-  Create Account
-  """
-    And I register multiple users for banners FS and EB in one go which are mentioned in google spreadsheet
-
-
-  @Register_PostSSO_For_FL_KFL_FA_CS_Single_User
-  Scenario: Register post SSO ES or EB or both single user
-
-    Given I am on the home page
-    When I click on Login Link
-    Then It should give you Sign In Dialog box
-    And I click on Create an account link
-    Then It should redirects to Create Account page
-  """
-  Create Account
-  """
-    And I input required fields data from excel sheet based on the specific row
-    And I choose an user selection for VIP ClubMember Or To Skip it
-    And I click on Create an account button
-    Then It should redirects to Almost Done page
-  """
-  Almost Done
-  """
-    And I verify verification email received in given email domain and from that email i parse the html url thru which new user can be verified
-    When I navigate to the url fetched from email to validate the user
-    Then It should redirects to Success page
-  """
-  Success!
-  """
-
-    And I input email data from excel sheet in email textbox
-    And I input password data from excel sheet in password textbox
-    And I click on Sign In button to login into an account
-    And Finally once user has successfully been registered i will move that specific row to registered user spreadsheet
-
-
-
-  @Register_PostSSO_FL_KFL_FA_CS_Multi_User
-  Scenario: Register Multiple users
-
-    Given I am on the home page
-    When I click on Login Link
-    Then It should give you Sign In Dialog box
-    And I click on Create an account link
-    Then It should redirects to Create Account page
-  """
-  Create Account
-  """
-    And I register multiple users for banners FL, LFL, FA and CS in one go which are mentioned in google spreadsheet
-
-
-  #========= OLD FROM THIS LINE TO BELOW =============
-
-
+  # ========= For Debug =============
 
   @Debug_PostSSO
   Scenario: Register post SSO ES or EB or both single user
-    And Finally once user has successfully been registered i will move that specific row to registered user spreadsheet
+    And I am on the home page
 
-
-
-
-  @Register_New_User_For_FL_KFL_FA_CS
-  Scenario Outline: Verify the ability to register
-
-    Given I am on the home page
-    When I click on Login Link
-    Then It should give you Sign In Dialog box
-    And I click on Create an account link
-    Then It should redirects to Create Account page
-  """
-  Create Account
-  """
-    And I input required fields with an user input given from excel sheet "NewUser_FL_KFL_FA_CS" "<From_RowNumber_TO_ColNumber>"
-    And I choose user as "<VipClubRewardsOrSkip>" from excel sheet "NewUser_FL_KFL_FA_CS"
-    And I click on Create an account button
-    Then It should redirects to Almost Done page
-  """
-  Almost Done
-  """
-    And I verify "<Email>" received in given email domain with "<EmailSubject>" from excel sheet "NewUser_FL_KFL_FA_CS" and parse url from email to validate new user
-    When I navigate to the url fetched from email to validate the user
-    Then It should redirects to Success page
-  """
-  Success!
-  """
-    And I input "<Email>" from excel sheet "NewUser_FL_KFL_FA_CS" in email textbox
-    And I input "<Password>" from excel sheet "NewUser_FL_KFL_FA_CS" in password textbox
-    And I click on Sign In button to login into an account
-
-    Examples:
-      | From_RowNumber_TO_ColNumber | Email | Password | EmailSubject | VipClubRewardsOrSkip |
-      | A2:H2                       | C2    | D2       | H2           | I2                   |
-
-
-
-
-
-  @Register_FS_EB
-  Scenario Outline: Verify the ability to register
-
-    Given I am on the home page
-    When I click on Login Link
-    Then It should give you Sign In Dialog box
-    And I click on Create an account link
-    Then It should redirects to Create Account page
-  """
-  Create Account
-  """
-    And I input required fields with an user input given from excel sheet "NewUser_FS_EB" "<From_RowNumber_TO_ColNumber>"
-    And I click on Create an account button
-    Then It should redirects to Almost Done page
-  """
-  Almost Done
-  """
-    And I verify "<Email>" received in given email domain with "<EmailSubject>" from excel sheet "NewUser_FS_EB" and parse url from email to validate new user
-    When I navigate to the url fetched from email to validate the user
-
-   # Post SSO Step
-   # Then It should redirects to Success page
-  #"""
-  #Success!
-  #"""
-
-   # Pre SSO Step
-    Then It should redirects to Activate your account page
-    """
-    Activate your account
-    """
-
-    And I input "<Email>" from excel sheet "NewUser_FS_EB" in email textbox
-    And I input "<Password>" from excel sheet "NewUser_FS_EB" in password textbox
-    And I click on Sign In button to login into an account
-    And Finally once user has successfully been registered i will go ahead and highlight that row that start and end from "<From_RowNumber_TO_ColNumber>" in given excel sheet "<NewUser_FS_EB>"
-
-    Examples:
-      | From_RowNumber_TO_ColNumber | Email | Password | EmailSubject |
-     # | A2:H2                       | C2    | D2       | H2           |
-     # | A3:H3                       | C3    | D3       | H3           |
-      | A14:H14                     | C14   | D14      | H14          |
-
-#============================================================================================
+  # ====================================================

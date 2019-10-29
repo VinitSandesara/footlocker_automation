@@ -22,6 +22,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class GoogleSheetAPI_PostCall {
@@ -160,11 +161,11 @@ public class GoogleSheetAPI_PostCall {
     }
 
 
-    public static void CopySpecificRowFromOneSheetToAnotherAtTheEnd(String spreadsheetId,String SourceSheetName, String DestinationSheetName, int DestiSheetNameRowNumber) throws IOException {
+    public static void CopySpecificRowFromOneSheetToAnotherAtTheEnd(String spreadsheetId, String SourceSheetName, String DestinationSheetName, int DestiSheetNameRowNumber) throws IOException {
         // Build a new authorized API client service.
         Sheets service = getSheetsService();
         // Prints the names and majors of students in a sample spreadsheet:
-      //  String spreadsheetId = "1OyDDGPtuDqdpTOQnt59cgf5WKjgb8cFHU5HyhYGFGKo";
+        //  String spreadsheetId = "1OyDDGPtuDqdpTOQnt59cgf5WKjgb8cFHU5HyhYGFGKo";
 
         List<List<Object>> TotalRowsInSourceSheet = GoogleSheetAPI_PostCall.getResponse(SourceSheetName, "A1", "W100").getValues();
 
@@ -188,7 +189,7 @@ public class GoogleSheetAPI_PostCall {
                 .batchUpdate(spreadsheetId, oRequest).execute();
 
         // getSpcificRowToRemoveSheet(DestinationSheetName, DestiSheetNameRowNumber);
-        deleteRow(DestinationSheetName,DestiSheetNameRowNumber);
+        deleteRow(DestinationSheetName, DestiSheetNameRowNumber);
 
 
     }
@@ -328,7 +329,7 @@ public class GoogleSheetAPI_PostCall {
     }
 
 
-    public static void deleteRow(String SheetName ,Integer EndIndex) throws IOException {
+    public static void deleteRow(String SheetName, Integer EndIndex) throws IOException {
 
         Sheets service = getSheetsService();
         // Prints the names and majors of students in a sample spreadsheet:
@@ -343,13 +344,12 @@ public class GoogleSheetAPI_PostCall {
             e1.printStackTrace();
         }
 
-        for(int i=0;i<=spreadsheet.getSheets().size();i++) {
-            if(spreadsheet.getSheets().get(i).getProperties().getTitle().equalsIgnoreCase(SheetName)) {
-                 SheetID = spreadsheet.getSheets().get(i).getProperties().getSheetId();
-                 break;
+        for (int i = 0; i <= spreadsheet.getSheets().size(); i++) {
+            if (spreadsheet.getSheets().get(i).getProperties().getTitle().equalsIgnoreCase(SheetName)) {
+                SheetID = spreadsheet.getSheets().get(i).getProperties().getSheetId();
+                break;
             }
         }
-
 
 
         String SetDestiSheetRowValueToSourceSheetAtRange = "Update!A3:B3";
@@ -360,7 +360,7 @@ public class GoogleSheetAPI_PostCall {
 
         DimensionRange dimensionRange = new DimensionRange();
         dimensionRange.setDimension("ROWS");
-        dimensionRange.setStartIndex(EndIndex -1);
+        dimensionRange.setStartIndex(EndIndex - 1);
         dimensionRange.setEndIndex(EndIndex);
         dimensionRange.setSheetId(SheetID);
 
@@ -502,27 +502,42 @@ public class GoogleSheetAPI_PostCall {
         // GoogleSheetAPI_PostCall.CopyAllDataFromOneSheetToAnother("Login","Update", "A1", "W100");
 
         /* Copy specific row from source to destination */
-       // GoogleSheetAPI_PostCall.CopySpecificRowFromOneSheetToAnotherAtTheEnd("Login", "Update", 6);
+        // GoogleSheetAPI_PostCall.CopySpecificRowFromOneSheetToAnotherAtTheEnd("Login", "Update", 6);
 
         /* Copy specific row from source to destination and delete copied row from source */
 
 
         // GoogleSheetAPI_PostCall.HighlightRowOnceUserRegistered("1OyDDGPtuDqdpTOQnt59cgf5WKjgb8cFHU5HyhYGFGKo",1,2,0,8,1091307946);
-      /*  int row = 4;
-        List<List<Object>> values = GoogleSheetAPI_PostCall.getResponse("Login", "A"+row+"", "G"+row+"").getValues();
-
-        int count = values.get(0).size();
-
-        for (List<Object> val : values) {
-
-
-            System.out.println("Your values ==>>" + val.get(0));
-            System.out.println("Your values ==>>" + val.get(1));
-            System.out.println("Your values ==>>" + val.get(2));
-        }*/
+        int row = 2;
+        String Col = "Password";
+        int index = 0;
+        List<List<Object>> colHeader = GoogleSheetAPI_PostCall.getResponse("NewUser_FS_EB", "A1", "M1").getValues();
 
 
 
+        // String Banner = values.get(0).get(values.get(0).size()-1).toString();
+
+
+        //int count = values.get(0).size();
+
+        for (List<Object> val : colHeader) {
+
+            for (int i = 0; i <= val.size(); i++) {
+
+                if (val.get(i).toString().equalsIgnoreCase(Col)) {
+
+                    index = i;
+                    break;
+
+                }
+
+            }
+        }
+
+          List<List<Object>> RowVal = GoogleSheetAPI_PostCall.getResponse("NewUser_FS_EB", "A" + row + "", "M"+row+"").getValues();
+
+          String Value = RowVal.get(0).get(index).toString();
+           System.out.println("Your value is  ==>>" + RowVal.get(0).get(index));
 
 
     }

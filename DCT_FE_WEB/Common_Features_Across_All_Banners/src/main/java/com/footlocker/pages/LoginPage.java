@@ -31,6 +31,16 @@ public class LoginPage extends BasePage {
         return page(LoginPage.class);
     }
 
+    public LoginPage InputEmailTextbox(String Email) {
+        $(INPUT_EMAIL_TEXTBOX).val(Email);
+        return page(LoginPage.class);
+    }
+
+    public LoginPage InputPasswordTextbox(String Password) {
+        $(INPUT_PASSWORD_TEXTBOX).val(Password);
+        return page(LoginPage.class);
+    }
+
    /* public LoginPage InputPasswordTextbox(String Password) {
         $(INPUT_PASSWORD_TEXTBOX).val(Password);
         return page(LoginPage.class);
@@ -47,9 +57,9 @@ public class LoginPage extends BasePage {
     }
 
 
-    public HomePage ClickSignInButton(String SheetName, String Col, int row) {
+    public HomePage ClickSignInButton(/*String SheetName, String Col, int row*/ String EmailSubject) {
 
-        if (GoogleSheetData.getSpecificColFromGoogleSheet(SheetName, Col, row).equalsIgnoreCase("Finish Activating Your Account")) {
+        if (EmailSubject.equalsIgnoreCase("Finish Activating Your Account")) {
             // Post SSO
             $(CLICK_SIGNIN_BUTTON).click();
         } else {

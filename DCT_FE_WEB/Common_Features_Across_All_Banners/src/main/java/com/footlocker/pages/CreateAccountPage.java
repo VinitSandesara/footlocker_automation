@@ -6,6 +6,7 @@ import com.codeborne.selenide.Condition;
 import com.footlocker.core.BasePage;
 import org.openqa.selenium.By;
 
+import java.util.HashMap;
 import java.util.List;
 
 import static SeleniumUtil.LocatorRepository.getLocator;
@@ -78,6 +79,22 @@ public class CreateAccountPage extends BasePage {
 
     }
 
+     public CreateAccountPage InputCreateAccountFieldsBasedOnSpecificExcelRowData(int RowNumber, String SheetName, String ListOfRequiredFields) {
+
+        HashMap<String, String> RowDataFromExcel = GoogleSheetData.getListOfCellValuesBasedOnColumnName(SheetName, RowNumber, ListOfRequiredFields);
+
+            $(CREATE_USER_FIRSTNAME_TEXTBOX).val(RowDataFromExcel.get("FirstName"));
+            $(CREATE_USER_LASTNAME_TEXTBOX).val(RowDataFromExcel.get("LastName"));
+            $(CREATE_USER_EMAIL_TEXTBOX).val(RowDataFromExcel.get("Email"));
+            $(CREATE_USER_PASSWORD_TEXTBOX).val(RowDataFromExcel.get("Password"));
+            $(CREATE_USER_DOB_MM_TEXTBOX).val(RowDataFromExcel.get("DOB_MM"));
+            $(CREATE_USER_DOB_DD_TEXTBOX).val(RowDataFromExcel.get("DOB_DD"));
+            $(CREATE_USER_DOB_YYYY_TEXTBOX).val(RowDataFromExcel.get("DOB_YYYY"));
+
+        return page(CreateAccountPage.class);
+
+    }
+
     public CreateAccountPage MultiUser_FillRequiredNewUserRegistrationForm(String Firstname, String Lastname, String Email, String Pass, String DOB_MM, String DOB_DD, String DOB_YYYY) {
 
         $(CREATE_USER_FIRSTNAME_TEXTBOX).val(Firstname);
@@ -99,11 +116,11 @@ public class CreateAccountPage extends BasePage {
         return page(CreateAccountPage.class);
     }
 
-    public CreateAccountPage RadioSelectionSkipVIPOptionOrClubRewardsOption(String RadioSelection, String ExcelSheetName) {
+    public CreateAccountPage RadioSelectionSkipVIPOptionOrClubRewardsOption(String RadioSelection) {
 
-        String UserRadioSelection = GoogleSheetData.getSpecificRowColValueFromGoogleSheet(ExcelSheetName, RadioSelection);
+       // String UserRadioSelection = GoogleSheetData.getSpecificRowColValueFromGoogleSheet(ExcelSheetName, RadioSelection);
 
-        if (UserRadioSelection.equalsIgnoreCase("SKIP")) {
+        if (RadioSelection.equalsIgnoreCase("SKIP")) {
             $(CREATE_USER_SKIP_VIP_OR_CLUB_REWARDS_OPTION).click();
         } else {
             $(CREATE_USER_VIP_OR_CLUB_REWARDS_OPTION).click();
