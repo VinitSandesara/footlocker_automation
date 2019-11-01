@@ -50,7 +50,7 @@ public class SelenideConfiguration {
 
 
 
-        /* Option : 2
+        /* Option : 2 */
         Map<String, Object> prefs = new HashMap<String, Object>();
         prefs.put("profile.default_content_setting_values.notifications", 2);
 
@@ -69,19 +69,19 @@ public class SelenideConfiguration {
       //  Configuration.baseUrl = "https://www.staging2.origin.footlocker.com/";
       //  driver.get(Configuration.baseUrl);
         WebDriverRunner.setWebDriver(driver);
-        System.out.println(""); */
+        System.out.println("");
 
 
         /* Option 3 - BrowserStack */
 
-        DesiredCapabilities caps = new DesiredCapabilities();
+       // DesiredCapabilities caps = new DesiredCapabilities();
+
+    /* MAC - CHROME
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
-        options.addArguments("--start-maximized");
         options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         caps.setCapability(ChromeOptions.CAPABILITY, options);
-
 
         caps.setCapability("browser", "Chrome");
         caps.setCapability("browser_version", "70.0");
@@ -91,20 +91,68 @@ public class SelenideConfiguration {
         caps.setCapability("browserstack.debug", "true");
         caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         caps.setCapability("build", "New_User_Register");
-        caps.setCapability("name", TestCaseName);
+        caps.setCapability("name", TestCaseName + "_CHROME"); */
 
 
-        try {
+    /* MAC - FIREFOX
+
+        caps.setCapability("os", "OS X");
+        caps.setCapability("os_version", "Mojave");
+        caps.setCapability("browser", "Firefox");
+        caps.setCapability("browser_version", "70.0");
+        caps.setCapability("browserstack.local", "false");
+        caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+         caps.setCapability("browserstack.debug", "true");
+        caps.setCapability("build", "New_User_Register");
+        caps.setCapability("name", TestCaseName + "_FIREFOX"); */
+
+    /* MAC - SAFARI
+
+        caps.setCapability("os", "OS X");
+        caps.setCapability("os_version", "Mojave");
+        caps.setCapability("browser", "Safari");
+        caps.setCapability("browser_version", "12.1");
+        caps.setCapability("browserstack.local", "false");
+        caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+        caps.setCapability("browserstack.debug", "true");
+        caps.setCapability("build", "New_User_Register");
+        caps.setCapability("name", TestCaseName + "_SAFARI"); */
+
+
+        /* WINDOWS - IE
+
+        caps.setCapability("os", "Windows");
+        caps.setCapability("os_version", "10");
+        caps.setCapability("browser", "IE");
+        caps.setCapability("browser_version", "11.0");
+        caps.setCapability("browserstack.local", "false");
+        caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+        caps.setCapability("browserstack.debug", "true");
+        caps.setCapability("build", "New_User_Register");
+        caps.setCapability("name", TestCaseName + "_WINDOWS_IE"); */
+
+        /* WINDOWS - FIREFOX
+
+        caps.setCapability("os", "Windows");
+        caps.setCapability("os_version", "10");
+        caps.setCapability("browser", "Firefox");
+        caps.setCapability("browser_version", "70.0");
+        caps.setCapability("browserstack.local", "false");
+        caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+        caps.setCapability("browserstack.debug", "true");
+        caps.setCapability("build", "New_User_Register");
+        caps.setCapability("name", TestCaseName + "_WINDOWS_FIREFOX"); */
+
+
+       /* try {
             driver = new RemoteWebDriver(new URL(URL), caps);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
 
         Configuration.timeout = 20000;
-       /* Configuration.baseUrl = "https://www.staging2.origin.footlocker.com/";
-        driver.get(Configuration.baseUrl);
-        driver.navigate().refresh(); */
-        WebDriverRunner.setWebDriver(driver);
+
+        WebDriverRunner.setWebDriver(driver);*/
 
 
     }

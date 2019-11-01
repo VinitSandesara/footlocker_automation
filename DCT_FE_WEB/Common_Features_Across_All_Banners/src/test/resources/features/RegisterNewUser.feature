@@ -34,7 +34,7 @@ Feature: New User Registration
 
 
   @Register_PostSSO_For_FL_KFL_FA_CS_Single_User
-  Scenario: Register post SSO ES or EB or both single user
+  Scenario: Register post SSO FL KFL FA and CS or both single user
 
     Given I am on the home page
     When I click on Login Link
@@ -79,7 +79,7 @@ Feature: New User Registration
 # ========= PRE SSO =============
 
   @Register_PreSSO_FS_EB_Single_User
-  Scenario: Register post SSO ES or EB or both single user
+  Scenario: Register Pre SSO for ES EB single user
 
     Given I am on the home page
     When I click on Login Link

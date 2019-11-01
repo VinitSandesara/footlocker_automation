@@ -2,7 +2,7 @@ package com.footlocker.steps;
 
 import com.footlocker.core.BaseSteps;
 import com.footlocker.pages.RedirectionPage;
-import cucumber.api.java8.En;
+
 
 public class PageRedirectionSteps extends BaseSteps {
 

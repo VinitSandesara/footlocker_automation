@@ -1,7 +1,8 @@
 package com.footlocker.runner;
 
 import com.footlocker.customrunner.CustomAbstractTestNGCucumberTestsWithTag;
-import cucumber.api.CucumberOptions;
+import io.cucumber.testng.CucumberOptions;
+
 
 @CucumberOptions(
         features = {"src/test/resources"},

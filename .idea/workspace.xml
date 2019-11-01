@@ -2,23 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="816a8cf9-23d3-4831-b388-5eb229be5076" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aventstack_extentreports_4_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_48.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_java8_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_junit_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_picocontainer_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_testng_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_beanshell_bsh_2_0b4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_picocontainer_picocontainer_2_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_9_10.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/GoogleApiUtil/GoogleSheetAPI_PostCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/GoogleApiUtil/GoogleSheetAPI_PostCall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/GoogleApiUtil/GoogleSheetData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/GoogleApiUtil/GoogleSheetData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/Commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/Commons.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commons/src/main/java/Jenkins/JenkinsParamsVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/Jenkins/JenkinsParamsVariable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/Rough/popupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/Rough/popupTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/resources/Note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/resources/Note.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/core/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/core/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/CreateAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/CreateAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/Common_Features_Across_All_Banners.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/Common_Features_Across_All_Banners.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/core/BaseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/core/BaseSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomAbstractTestNGCucumberTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomAbstractTestNGCucumberTestsWithTag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomTestNGCucumberRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomTestNGCucumberRunnerWithTag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CustomGenericRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CustomGenericRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CustomGenericRunnerWithTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CustomGenericRunnerWithTag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/AccountSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/AccountSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/RegisterMultiUserSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/RegisterMultiUserSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/PageRedirectionSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/PageRedirectionSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/SelenideConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/SelenideConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/FeatureFileBackup/Backup_RegisterNewUser.feature" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/FeatureFileBackup/Backup_RegisterNewUser.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/features/RegisterNewUser.feature" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/features/RegisterNewUser.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/DCT_FE_WEB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/DCT_FE_WEB.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/FLCA_Specific_Features/FLCA_Specific_Features.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/FLCA_Specific_Features/FLCA_Specific_Features.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Footlocker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Footlocker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/target/" />
     <ignored path="$PROJECT_DIR$/Commons/target/" />
@@ -33,45 +48,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/features/RegisterNewUser.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/Hooks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/SelenideConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="807">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomTestNGCucumberRunnerWithTag.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="66" column="67" lean-forward="true" selection-start-line="66" selection-start-column="67" selection-end-line="66" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Commons/src/main/java/Jenkins/JenkinsParamsVariable.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,13 +78,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/automationTest.java" />
-        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomAbstractTestNGCucumberTests.java" />
-        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomAbstractTestNGCucumberTestsWithTag.java" />
         <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomTestNGCucumberRunnerWithTag.java" />
-        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomTestNGCucumberRunner.java" />
-        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CustomGenericRunner.java" />
-        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CustomGenericRunnerWithTag.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Commons/src/main/java/GoogleApiUtil/test.java" />
         <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/MultiUserRegistration.java" />
         <option value="$PROJECT_DIR$/Commons/src/main/java/Rough/Debug_Test.java" />
@@ -127,12 +97,23 @@
         <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/CreateAccountPage.java" />
         <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/AccountSteps.java" />
         <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/LoginPage.java" />
-        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/LoginSteps.java" />
         <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/RegisterMultiUserSteps.java" />
+        <option value="$PROJECT_DIR$/Commons/src/main/java/ExtentReport/CustomExtentReporter.java" />
+        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CustomGenericRunnerWithTag.java" />
+        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomTestNGCucumberRunner.java" />
+        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomAbstractTestNGCucumberTests.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/core/PicoDependencyInjector.java" />
+        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CustomGenericRunner.java" />
+        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/Hooks.java" />
+        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/LoginSteps.java" />
+        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/PageRedirectionSteps.java" />
+        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/MyStepdefs.java" />
+        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/core/BaseSteps.java" />
+        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/SelenideConfiguration.java" />
+        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomAbstractTestNGCucumberTestsWithTag.java" />
         <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/features/RegisterNewUser.feature" />
         <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java" />
-        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/Hooks.java" />
-        <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/SelenideConfiguration.java" />
         <option value="$PROJECT_DIR$/Commons/src/main/java/Jenkins/JenkinsParamsVariable.java" />
       </list>
     </option>
@@ -146,10 +127,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="314" />
+    <option name="x" value="100" />
     <option name="y" value="23" />
-    <option name="width" value="2297" />
-    <option name="height" value="1352" />
+    <option name="width" value="1934" />
+    <option name="height" value="1004" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -159,7 +140,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,37 +181,39 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="GoogleApiUtil" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="footlocker_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="Commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Jenkins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
               <item name="footlocker_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="Commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Rough" type="462c0819:PsiDirectoryNode" />
+              <item name="DCT_FE_WEB" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
               <item name="footlocker_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="Commons" type="462c0819:PsiDirectoryNode" />
+              <item name="DCT_FE_WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="Common_Features_Across_All_Banners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="footlocker_automation" type="462c0819:PsiDirectoryNode" />
+              <item name="DCT_FE_WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="Common_Features_Across_All_Banners" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="footlocker_automation" type="462c0819:PsiDirectoryNode" />
+              <item name="DCT_FE_WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="Common_Features_Across_All_Banners" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
               <item name="footlocker_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="Commons" type="462c0819:PsiDirectoryNode" />
+              <item name="DCT_FE_WEB" type="462c0819:PsiDirectoryNode" />
+              <item name="Common_Features_Across_All_Banners" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -239,74 +222,11 @@
               <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
               <item name="footlocker_automation" type="462c0819:PsiDirectoryNode" />
               <item name="DCT_FE_WEB" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="footlocker_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="DCT_FE_WEB" type="462c0819:PsiDirectoryNode" />
-              <item name="Common_Features_Across_All_Banners" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="footlocker_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="DCT_FE_WEB" type="462c0819:PsiDirectoryNode" />
               <item name="Common_Features_Across_All_Banners" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="footlocker_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="DCT_FE_WEB" type="462c0819:PsiDirectoryNode" />
-              <item name="Common_Features_Across_All_Banners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="footlocker_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="DCT_FE_WEB" type="462c0819:PsiDirectoryNode" />
-              <item name="Common_Features_Across_All_Banners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="footlocker_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="DCT_FE_WEB" type="462c0819:PsiDirectoryNode" />
-              <item name="Common_Features_Across_All_Banners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="footlocker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="footlocker_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="DCT_FE_WEB" type="462c0819:PsiDirectoryNode" />
-              <item name="Common_Features_Across_All_Banners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="footlocker" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="footlocker_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="DCT_FE_WEB" type="462c0819:PsiDirectoryNode" />
-              <item name="Common_Features_Across_All_Banners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="footlocker_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="DCT_FE_WEB" type="462c0819:PsiDirectoryNode" />
-              <item name="Common_Features_Across_All_Banners" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
@@ -317,6 +237,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="footlocker" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Footlocker" type="b2602c69:ProjectViewProjectNode" />
@@ -384,11 +305,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572368216376" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572642457648" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -406,7 +327,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
+  <component name="RunManager" selected="TestNG.CustomGenericRunnerWithTag">
     <configuration name="GoogleSheetAPI_PostCall" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GoogleApiUtil.GoogleSheetAPI_PostCall" />
       <module name="Commons" />
@@ -428,15 +349,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Common_Features_Across_All_Banners" />
-      <option name="PACKAGE_NAME" value="com.footlocker.runner" />
-      <option name="MAIN_CLASS_NAME" value="com.footlocker.runner.TestRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CustomGenericRunnerWithTag" type="TestNG">
       <module name="Common_Features_Across_All_Banners" />
       <option name="SUITE_NAME" value="" />
@@ -444,7 +356,7 @@
       <option name="MAIN_CLASS_NAME" value="com.footlocker.runner.CustomGenericRunnerWithTag" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea -DTagName=&quot;@Register_PostSSO_FS_EB_Single_User&quot;" />
+      <option name="VM_PARAMETERS" value="-ea -DTagName=@Register_PostSSO_FS_EB_Single_User,@Register_PostSSO_For_FL_KFL_FA_CS_Single_User" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -469,17 +381,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner" type="TestNG">
+      <module name="Common_Features_Across_All_Banners" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.footlocker.runner" />
+      <option name="MAIN_CLASS_NAME" value="com.footlocker.runner.TestRunner" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.GoogleSheetData" />
-      <item itemvalue="JUnit.TestRunner" />
-      <item itemvalue="TestNG.CustomGenericRunnerWithTag" />
-      <item itemvalue="TestNG.SelenideTest.testSimple" />
       <item itemvalue="Application.popupTest" />
       <item itemvalue="Application.GoogleSheetAPI_PostCall" />
+      <item itemvalue="TestNG.TestRunner" />
+      <item itemvalue="TestNG.CustomGenericRunnerWithTag" />
+      <item itemvalue="TestNG.SelenideTest.testSimple" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Application.GoogleSheetAPI_PostCall" />
         <item itemvalue="Application.popupTest" />
         <item itemvalue="TestNG.SelenideTest.testSimple" />
@@ -501,42 +431,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRunner - 2019.10.28 at 14h 49m 38s.xml">
+    <history-entry file="CustomGenericRunnerWithTag - 2019.10.31 at 21h 37m 34s.xml">
+      <configuration name="CustomGenericRunnerWithTag" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CustomGenericRunnerWithTag - 2019.10.31 at 21h 38m 21s.xml">
+      <configuration name="CustomGenericRunnerWithTag" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CustomGenericRunnerWithTag - 2019.10.31 at 21h 38m 42s.xml">
+      <configuration name="CustomGenericRunnerWithTag" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CustomGenericRunnerWithTag - 2019.10.31 at 21h 39m 21s.xml">
+      <configuration name="CustomGenericRunnerWithTag" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CustomGenericRunnerWithTag - 2019.10.31 at 21h 44m 15s.xml">
+      <configuration name="CustomGenericRunnerWithTag" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestRunner - 2019.10.31 at 21h 53m 59s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.10.28 at 14h 51m 29s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="TestRunner - 2019.10.31 at 21h 58m 08s.xml">
+      <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.10.28 at 15h 10m 19s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="TestRunner - 2019.10.31 at 21h 58m 24s.xml">
+      <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.10.29 at 09h 59m 59s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="CustomGenericRunnerWithTag - 2019.11.01 at 15h 57m 31s.xml">
+      <configuration name="CustomGenericRunnerWithTag" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestRunner - 2019.10.29 at 10h 02m 11s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRunner - 2019.10.29 at 10h 30m 51s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRunner - 2019.10.29 at 10h 36m 13s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRunner - 2019.10.29 at 10h 37m 56s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRunner - 2019.10.29 at 10h 51m 20s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRunner - 2019.10.29 at 11h 52m 47s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="CustomGenericRunnerWithTag - 2019.11.01 at 15h 57m 59s.xml">
+      <configuration name="CustomGenericRunnerWithTag" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="376" y="23" width="2297" height="1352" extended-state="0" />
+    <frame x="100" y="23" width="1934" height="1004" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.26040268" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.30982906" />
       <window_info id="Structure" order="1" sideWeight="0.500821" side_tool="true" weight="0.22877759" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -545,15 +475,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39443535" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5450082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3935927" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.51373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.58674306" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.5846682" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.47482836" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -598,10 +528,28 @@
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/SelenideConfiguration.java</url>
-          <line>76</line>
+          <url>file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomAbstractTestNGCucumberTestsWithTag.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomAbstractTestNGCucumberTestsWithTag.java</url>
+          <line>35</line>
           <properties />
           <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomAbstractTestNGCucumberTestsWithTag.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/AccountSteps.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -614,121 +562,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/core/PageContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/core/PicoDependencyInjector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/automationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/cucumber.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/extent-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/features/catalog.feature">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomAbstractTestNGCucumberTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CustomGenericRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomTestNGCucumberRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/apis/google-api-services-sheets/v4-rev483-1.22.0/google-api-services-sheets-v4-rev483-1.22.0.jar!/com/google/api/services/sheets/v4/Sheets.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="159" column="58" selection-start-line="159" selection-start-column="58" selection-end-line="159" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CustomGenericRunnerWithTag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/SeleniumUtil/LocatorRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/GoogleApiUtil/GoogleSheetAPI_GetCall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="953">
-          <caret line="184" column="5" lean-forward="true" selection-start-line="184" selection-start-column="5" selection-end-line="184" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar!/gherkin/formatter/model/Examples.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/GoogleApiUtil/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/MultiUserRegistration.java" />
     <entry file="file://$PROJECT_DIR$/Commons/src/main/resources/Locators/createUser_Locators.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -811,13 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="128" column="36" lean-forward="true" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Commons/src/main/java/GoogleApiUtil/GoogleSheetAPI_PostCall.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="593">
@@ -846,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/FeatureFileBackup/Backup_RegisterNewUser.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
@@ -874,51 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/CreateAccountPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="91" column="56" selection-start-line="91" selection-start-column="56" selection-end-line="91" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/GoogleApiUtil/GoogleSheetData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
-          <caret line="84" column="98" selection-start-line="84" selection-start-column="98" selection-end-line="84" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/LoginSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="57" column="55" lean-forward="true" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/PageRedirectionSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/RegisterMultiUserSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="844">
-          <caret line="137" column="95" lean-forward="true" selection-start-line="137" selection-start-column="95" selection-end-line="137" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/core/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -926,60 +700,260 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/AccountSteps.java">
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        <state relative-caret-position="233">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java">
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/GoogleApiUtil/GoogleSheetData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="688">
+          <caret line="99" column="58" lean-forward="true" selection-start-line="99" selection-start-column="58" selection-end-line="99" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomAbstractTestNGCucumberTestsWithTag.java">
+    <entry file="file://$PROJECT_DIR$/Commons/src/main/java/ExtentReport/CustomExtentReporter.java" />
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/RegisterMultiUserSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="3014">
+          <caret line="137" column="95" lean-forward="true" selection-start-line="137" selection-start-column="95" selection-end-line="137" selection-end-column="95" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/automationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomTestNGCucumberRunnerWithTag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="66" column="67" lean-forward="true" selection-start-line="66" selection-start-column="67" selection-end-line="66" selection-end-column="67" />
+        <state relative-caret-position="-1324">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomTestNGCucumberRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="111" column="9" lean-forward="true" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomAbstractTestNGCucumberTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/PageRedirectionSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/LoginSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/MyStepdefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/FeatureFileBackup/Backup_RegisterNewUser.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/SelenideConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="81" column="44" lean-forward="true" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1912#1928#0" expanded="true" />
+            <element signature="e#6146#6147#0" expanded="true" />
+            <element signature="e#6194#6195#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/Hooks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        <state relative-caret-position="545">
+          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-testng/4.7.2/cucumber-testng-4.7.2.jar!/io/cucumber/testng/PickleEventWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/gherkin/5.1.0/gherkin-5.1.0.jar!/gherkin/pickles/Pickle.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="e#1085#1086#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/CreateAccountPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="120" column="62" lean-forward="true" selection-start-line="120" selection-start-column="62" selection-end-line="120" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-testng/4.7.2/cucumber-testng-4.7.2.jar!/io/cucumber/testng/PickleEventWrapperImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#456#457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar!/org/picocontainer/annotations/Inject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CustomGenericRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/core/PicoDependencyInjector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/core/PageContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/core/BaseSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/AccountSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1914">
+          <caret line="87" column="37" lean-forward="true" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="173" column="72" lean-forward="true" selection-start-line="173" selection-start-column="72" selection-end-line="173" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/customrunner/CustomAbstractTestNGCucumberTestsWithTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="733">
+          <caret line="123" column="38" lean-forward="true" selection-start-line="123" selection-start-column="38" selection-end-line="123" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/features/RegisterNewUser.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="37" />
+        <state relative-caret-position="-1475">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/SelenideConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CustomGenericRunnerWithTag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="308">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

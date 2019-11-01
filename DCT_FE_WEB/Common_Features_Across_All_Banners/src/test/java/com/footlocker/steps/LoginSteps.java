@@ -4,8 +4,7 @@ import GoogleApiUtil.GoogleSheetData;
 import Jenkins.JenkinsParamsVariable;
 import com.footlocker.core.BaseSteps;
 import com.footlocker.pages.LoginPage;
-import com.footlocker.pages.RedirectionPage;
-import cucumber.api.java8.En;
+
 
 public class LoginSteps extends BaseSteps {
 

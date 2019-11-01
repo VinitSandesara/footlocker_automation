@@ -1,17 +1,11 @@
 package com.footlocker.steps;
 
-import GoogleApiUtil.GoogleSheetAPI_GetCall;
-import Jenkins.JenkinsParamsVariable;
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.WebDriverRunner;
-import com.vimalselvam.cucumber.listener.Reporter;
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 
-import java.io.File;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import Jenkins.JenkinsParamsVariable;
+import com.codeborne.selenide.WebDriverRunner;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+
 
 public class Hooks {
 
