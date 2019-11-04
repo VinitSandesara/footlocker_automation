@@ -111,8 +111,21 @@ Feature: New User Registration
 
   # ========= For Debug =============
 
-  @Debug_PostSSO
-  Scenario: Register post SSO ES or EB or both single user
-    And I am on the home page
+  @Debug_PostSSO_FS
+  Scenario: Register post SSO ES
+    And I am on the home page test
+    And I input "Password" data from excel sheet in password textbox
+
+  @Debug_PostSSO_FL
+  Scenario: Register post SSO FL
+    And I am on the home page test
+    When I click on Login Link
+    Then It should give you Sign In Dialog box
+    And I click on Create an account link
+    Then It should redirects to Create Account page
+  """
+  Create Account
+  """
+    And I input required fields which are "FirstName,LastName,Email,Password,DOB_MM,DOB_DD,DOB_YYYY" data from excel sheet
 
   # ====================================================
