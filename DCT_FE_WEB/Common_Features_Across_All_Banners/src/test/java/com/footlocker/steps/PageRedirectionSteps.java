@@ -23,6 +23,9 @@ public class PageRedirectionSteps extends BaseSteps {
         Then("^It should redirects to Activate your account page$", (String PageName) ->
                 update(((RedirectionPage) page())
                         .VerifyActivateYourAccountPage(PageName)));
+
+
+
     }
 
 

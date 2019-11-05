@@ -3,7 +3,7 @@ Feature: New User Registration
 
 # ========= POST SSO =============
 
-  @Register_PostSSO_FS_EB_Single_User
+  @Register_PostSSO_FS_EB_Single_User @NewUserRegister
   Scenario: Register post SSO ES or EB or both single user
 
     Given I am on the home page
@@ -33,7 +33,7 @@ Feature: New User Registration
     And Finally once user has successfully been registered i will move that specific row to registered user spreadsheet
 
 
-  @Register_PostSSO_For_FL_KFL_FA_CS_Single_User
+  @Register_PostSSO_For_FL_KFL_FA_CS_Single_User @NewUserRegister
   Scenario: Register post SSO FL KFL FA and CS or both single user
 
     Given I am on the home page
@@ -111,21 +111,13 @@ Feature: New User Registration
 
   # ========= For Debug =============
 
-  @Debug_PostSSO_FS
+  @Debug_PostSSO_FS @Debug_New_Single_User
   Scenario: Register post SSO ES
-    And I am on the home page test
-    And I input "Password" data from excel sheet in password textbox
+    And I am on the home page test "https://www.footlocker.com/"
 
-  @Debug_PostSSO_FL
+
+  @Debug_PostSSO_FL @Debug_New_Single_User
   Scenario: Register post SSO FL
-    And I am on the home page test
-    When I click on Login Link
-    Then It should give you Sign In Dialog box
-    And I click on Create an account link
-    Then It should redirects to Create Account page
-  """
-  Create Account
-  """
-    And I input required fields which are "FirstName,LastName,Email,Password,DOB_MM,DOB_DD,DOB_YYYY" data from excel sheet
+    And I am on the home page test "https://www.eastbay.com/"
 
   # ====================================================

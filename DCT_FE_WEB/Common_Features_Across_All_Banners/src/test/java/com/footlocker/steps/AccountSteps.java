@@ -36,7 +36,7 @@ public class AccountSteps extends BaseSteps {
         });
 
 
-        And("^I am on the home page test$", () -> {
+       And("^I am on the home page test \"([^\"]*)\"$", (String url) -> {
 
 
         
@@ -44,9 +44,9 @@ public class AccountSteps extends BaseSteps {
                     null,
                     Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber),
                     "Banner"
-            );
+            ); */
 
-            SelenideConfiguration.driver.get(Configuration.baseUrl); */
+            SelenideConfiguration.driver.get(url);
             String value = Hooks.key;
             update(goToHomePage());
 
