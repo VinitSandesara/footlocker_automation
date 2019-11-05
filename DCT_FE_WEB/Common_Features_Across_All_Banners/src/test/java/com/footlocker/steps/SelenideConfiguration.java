@@ -144,7 +144,7 @@ public class SelenideConfiguration {
         caps.setCapability("name", TestCaseName + "_WINDOWS_FIREFOX"); */
 
 
-       /* try {
+        try {
             driver = new RemoteWebDriver(new URL(URL), caps);
         } catch (MalformedURLException e) {
             e.printStackTrace();
@@ -152,7 +152,7 @@ public class SelenideConfiguration {
 
         Configuration.timeout = 20000;
 
-        WebDriverRunner.setWebDriver(driver);*/
+        WebDriverRunner.setWebDriver(driver);
 
 
     }
