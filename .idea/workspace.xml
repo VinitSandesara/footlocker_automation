@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="816a8cf9-23d3-4831-b388-5eb229be5076" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/GoogleApiUtil/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/GoogleApiUtil/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/Jenkins/JenkinsParamsVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/Jenkins/JenkinsParamsVariable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/Rough/Debug_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/Rough/Debug_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/Rough/popupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/Rough/popupTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/AccountSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/AccountSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/PageRedirectionSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/PageRedirectionSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/SelenideConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/SelenideConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/features/RegisterNewUser.feature" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/features/RegisterNewUser.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/target/" />
@@ -30,22 +21,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/features/RegisterNewUser.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="781">
-              <caret line="111" column="37" lean-forward="true" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="37" />
+            <state relative-caret-position="913">
+              <caret line="117" selection-start-line="117" selection-end-line="117" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Commons/src/main/java/Jenkins/JenkinsParamsVariable.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1078">
-              <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1061#1075#0" expanded="true" />
-                <element signature="e#1219#1227#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1008">
+              <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
             </state>
           </provider>
         </entry>
@@ -102,7 +88,6 @@
         <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/LoginSteps.java" />
         <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java" />
         <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/SelenideConfiguration.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/features/RegisterNewUser.feature" />
         <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/PageRedirectionSteps.java" />
         <option value="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/AccountSteps.java" />
@@ -111,6 +96,7 @@
         <option value="$PROJECT_DIR$/Commons/src/main/java/Rough/Debug_Test.java" />
         <option value="$PROJECT_DIR$/Commons/src/main/java/Rough/popupTest.java" />
         <option value="$PROJECT_DIR$/Commons/src/main/java/Jenkins/JenkinsParamsVariable.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -125,7 +111,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="138" />
     <option name="y" value="23" />
-    <option name="width" value="2082" />
+    <option name="width" value="2141" />
     <option name="height" value="1346" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -332,7 +318,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572976195700" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572976373091" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -501,10 +487,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="138" y="23" width="2082" height="1346" extended-state="0" />
+    <frame x="138" y="23" width="2141" height="1346" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.32277226" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.3136123" />
       <window_info id="Structure" order="1" sideWeight="0.500821" side_tool="true" weight="0.22877759" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -851,13 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="934">
-          <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/PageRedirectionSteps.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -970,13 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/features/RegisterNewUser.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="781">
-          <caret line="111" column="37" lean-forward="true" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Commons/src/main/java/Jenkins/JenkinsParamsVariable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1078">
@@ -986,6 +958,20 @@
             <element signature="e#1061#1075#0" expanded="true" />
             <element signature="e#1219#1227#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/resources/features/RegisterNewUser.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="913">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
         </state>
       </provider>
     </entry>

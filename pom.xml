@@ -171,9 +171,9 @@
 						even if there is a test failure -->
                     <includes> <!-- Specify the file name -->
                         <!--suppress UnresolvedMavenProperty -->
-                        <!--include>${runner.name}</include !--> <!-- This will include all the file
+                        <include>${runner.name}</include> <!-- This will include all the file
 							which has "Runner" as suffix in their name !-->
-                        <include>**/*Runner.java</include>
+                        <!--include>**/*Runner.java</include !-->
 
                     </includes>
                     <suiteXmlFiles>
