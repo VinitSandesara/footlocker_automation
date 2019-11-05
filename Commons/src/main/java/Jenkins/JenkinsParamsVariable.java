@@ -7,13 +7,14 @@ import java.util.List;
 
 public class JenkinsParamsVariable {
 
-    /* Jenkins run  */
+    /* Jenkins run */
     public static String GoogleDriveSpreadSheetName = System.getProperty("SpreadSheetName");
     public static String GoogleDriveSpreadSheetRowNumber = System.getProperty("SheetRowNumber");
     public static String TagName = System.getProperty("TagName");
 
 
     /* Local Run
+
     public static String GoogleDriveSpreadSheetName = "NewUser_FS_EB,NewUser_FL_KFL_FA_CS";
     public static String GoogleDriveSpreadSheetRowNumber = "2,3";
     public static String TagName = "@Register_PostSSO_FS_EB_Single_User,@Register_PostSSO_For_FL_KFL_FA_CS_Single_User"; */

@@ -50,7 +50,7 @@ public class SelenideConfiguration {
 
 
 
-        /* Option : 2 */
+        /* Option : 2
         Map<String, Object> prefs = new HashMap<String, Object>();
         prefs.put("profile.default_content_setting_values.notifications", 2);
 
@@ -69,14 +69,14 @@ public class SelenideConfiguration {
       //  Configuration.baseUrl = "https://www.staging2.origin.footlocker.com/";
       //  driver.get(Configuration.baseUrl);
         WebDriverRunner.setWebDriver(driver);
-        System.out.println("");
+        System.out.println("");  */
 
 
-        /* Option 3 - BrowserStack */
+        /* ============ Option 3 - BrowserStack ============ */
 
-       // DesiredCapabilities caps = new DesiredCapabilities();
+    /* MAC - CHROME */
 
-    /* MAC - CHROME
+        DesiredCapabilities caps = new DesiredCapabilities();
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
@@ -91,7 +91,7 @@ public class SelenideConfiguration {
         caps.setCapability("browserstack.debug", "true");
         caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         caps.setCapability("build", "New_User_Register");
-        caps.setCapability("name", TestCaseName + "_CHROME"); */
+        caps.setCapability("name", TestCaseName + "_CHROME");
 
 
     /* MAC - FIREFOX
