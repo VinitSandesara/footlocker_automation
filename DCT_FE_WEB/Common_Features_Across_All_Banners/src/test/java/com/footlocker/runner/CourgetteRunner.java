@@ -63,10 +63,4 @@ public class CourgetteRunner {
 
 public class CourgetteRunner extends TestNGCourgette {
 
-  /*  @AfterSuite
-    public void teadown() {
-        ExtentTestManager.endTest();
-        ExtentManager.getInstance().flush();
-    } */
-
 }
