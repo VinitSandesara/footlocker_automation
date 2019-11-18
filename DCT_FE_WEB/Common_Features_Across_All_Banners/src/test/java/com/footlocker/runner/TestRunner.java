@@ -5,7 +5,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
-@RunWith(Cucumber.class)
+/*@RunWith(Cucumber.class)
 @CucumberOptions(
 
 
@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         plugin = {"pretty", "json:target/CucumberHtmlReport.json"}
 
 
-)
+)*/
 
 //public class TestRunner extends AbstractTestNGCucumberTests {
 //public class TestRunner extends CustomAbstractTestNGCucumberTestsWithTag {
