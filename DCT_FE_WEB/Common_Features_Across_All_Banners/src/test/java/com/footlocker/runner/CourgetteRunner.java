@@ -21,32 +21,32 @@ import courgette.api.testng.TestNGCourgette;
 
 @RunWith(Courgette.class)
 @CourgetteOptions(
-        threads = 10,
-        runLevel = CourgetteRunLevel.SCENARIO,
+      //  threads = 10,
+      //  runLevel = CourgetteRunLevel.SCENARIO,
         rerunFailedScenarios = false,
         showTestOutput = true,
-        reportTargetDir = "build",
+        reportTargetDir = "target/CourgetteHtmlReport",
         cucumberOptions = @CucumberOptions(
                 features = "src/test/resources/features",
                 glue = "com.footlocker.steps",
-                tags = {"@Register_Multi_User", "not @excluded"},
+             //   tags = {"@Debug_New_Single_User", "not @excluded"},
                 plugin = {
                         "pretty",
-                        "json:build/cucumber-report/cucumber.json",
-                        "html:build/cucumber-report/cucumber.html",
-                        "junit:build/cucumber-report/cucumber.xml"},
+                        "json:target/CourgetteHtmlReport/cucumber-report/cucumber.json",
+                        "html:target/CourgetteHtmlReport/cucumber-report/cucumber.html",
+                        "junit:target/CourgetteHtmlReport/cucumber-report/cucumber.xml"},
                 strict = true
         ))
 public class CourgetteRunner {
 
-} */
+}  */
 
 /* Using TestNg */
 
 @Test
 @CourgetteOptions(
-        threads = 10,
-        runLevel = CourgetteRunLevel.SCENARIO,
+       // threads = 10,
+      //  runLevel = CourgetteRunLevel.SCENARIO,
         rerunFailedScenarios = false,
         showTestOutput = true,
         reportTargetDir = "target/CourgetteHtmlReport",

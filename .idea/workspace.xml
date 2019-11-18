@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="816a8cf9-23d3-4831-b388-5eb229be5076" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CourgetteRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CourgetteRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +65,18 @@
       <recent name="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CourgettRunner">
+  <component name="RunManager" selected="JUnit.CourgetteJunitRunner">
+    <configuration name="CourgetteJunitRunner" type="JUnit" factoryName="JUnit">
+      <module name="Common_Features_Across_All_Banners" />
+      <option name="PACKAGE_NAME" value="com.footlocker.runner" />
+      <option name="MAIN_CLASS_NAME" value="com.footlocker.runner.CourgetteRunner" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DebugRunner" type="JUnit" factoryName="JUnit">
       <module name="Common_Features_Across_All_Banners" />
       <option name="PACKAGE_NAME" value="com.footlocker.runner" />
@@ -77,28 +88,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourgettRunner" type="TestNG">
-      <module name="Common_Features_Across_All_Banners" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="com.footlocker.runner" />
-      <option name="MAIN_CLASS_NAME" value="com.footlocker.runner.CourgetteRunner" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.DebugRunner" />
-      <item itemvalue="TestNG.CourgettRunner" />
+      <item itemvalue="JUnit.CourgetteJunitRunner" />
     </list>
   </component>
   <component name="ServiceViewManager">
@@ -158,50 +150,52 @@
       <screen x="0" y="23" width="2048" height="1004" />
     </state>
     <state x="304" y="28" key="#Updates/0.23.2048.1004@0.23.2048.1004" timestamp="1573947980439" />
-    <state x="532" y="91" width="1345" height="936" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1574020225063">
-      <screen x="0" y="23" width="2048" height="1004" />
+    <state x="665" y="115" width="1345" height="936" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1574096715767">
+      <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state x="532" y="91" width="1345" height="936" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2048.1004@0.23.2048.1004" timestamp="1574020225063" />
+    <state x="665" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1362@0.23.2560.1362" timestamp="1574096715767" />
     <state x="820" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1574018651183">
       <screen x="0" y="23" width="2048" height="1004" />
     </state>
     <state x="820" y="113" key="#com.intellij.ide.util.MemberChooser/0.23.2048.1004@0.23.2048.1004" timestamp="1574018651183" />
-    <state x="817" y="262" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1573949345367">
-      <screen x="0" y="23" width="2048" height="1004" />
+    <state x="1021" y="347" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1574096712594">
+      <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state x="817" y="262" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.2048.1004@0.23.2048.1004" timestamp="1573949345367" />
+    <state x="1021" y="347" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.2560.1362@0.23.2560.1362" timestamp="1574096712594" />
     <state x="592" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1573947982329">
       <screen x="0" y="23" width="2048" height="1004" />
     </state>
     <state x="592" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.2048.1004@0.23.2048.1004" timestamp="1573947982329" />
-    <state width="2304" height="919" key="GridCell.Tab.0.bottom" timestamp="1574093076018">
+    <state width="2304" height="919" key="GridCell.Tab.0.bottom" timestamp="1574096838098">
       <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.bottom/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012085" />
     <state width="1848" height="404" key="GridCell.Tab.0.bottom/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351022" />
     <state width="1797" height="640" key="GridCell.Tab.0.bottom/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242145" />
-    <state width="2304" height="919" key="GridCell.Tab.0.bottom/0.23.2560.1362@0.23.2560.1362" timestamp="1574093076018" />
-    <state width="2304" height="919" key="GridCell.Tab.0.center" timestamp="1574093076017">
+    <state width="2304" height="919" key="GridCell.Tab.0.bottom/0.23.2560.1362@0.23.2560.1362" timestamp="1574096838098" />
+    <state width="2304" height="919" key="GridCell.Tab.0.center" timestamp="1574096838097">
       <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.center/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012084" />
     <state width="1848" height="404" key="GridCell.Tab.0.center/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351021" />
     <state width="1797" height="640" key="GridCell.Tab.0.center/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242144" />
-    <state width="2304" height="919" key="GridCell.Tab.0.center/0.23.2560.1362@0.23.2560.1362" timestamp="1574093076017" />
-    <state width="2304" height="919" key="GridCell.Tab.0.left" timestamp="1574093076016">
+    <state width="2304" height="919" key="GridCell.Tab.0.center/0.23.2560.1362@0.23.2560.1362" timestamp="1574096838097" />
+    <state width="2304" height="919" key="GridCell.Tab.0.left" timestamp="1574096838096">
       <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.left/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012084" />
     <state width="1848" height="404" key="GridCell.Tab.0.left/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351021" />
     <state width="1797" height="640" key="GridCell.Tab.0.left/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242144" />
-    <state width="2304" height="919" key="GridCell.Tab.0.left/0.23.2560.1362@0.23.2560.1362" timestamp="1574093076016" />
-    <state width="2304" height="919" key="GridCell.Tab.0.right" timestamp="1574093076017">
+    <state width="2304" height="919" key="GridCell.Tab.0.left/0.23.2560.1362@0.23.2560.1362" timestamp="1574096838096" />
+    <state width="2304" height="919" key="GridCell.Tab.0.right" timestamp="1574096838097">
       <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.right/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012085" />
     <state width="1848" height="404" key="GridCell.Tab.0.right/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351022" />
     <state width="1797" height="640" key="GridCell.Tab.0.right/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242145" />
-    <state width="2304" height="919" key="GridCell.Tab.0.right/0.23.2560.1362@0.23.2560.1362" timestamp="1574093076017" />
+    <state width="2304" height="919" key="GridCell.Tab.0.right/0.23.2560.1362@0.23.2560.1362" timestamp="1574096838097" />
     <state width="1848" height="404" key="GridCell.Tab.1.bottom" timestamp="1574032351023">
       <screen x="0" y="23" width="2048" height="1003" />
     </state>
@@ -282,6 +276,7 @@
       <FILTER>com.footlocker.runner.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Footlocker$CourgetteRunnerWithTestNG.ic" NAME="CourgetteRunnerWithTestNG Coverage Results" MODIFIED="1573948393994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Footlocker$CourgetteJunitRunner.ic" NAME="CourgetteJunitRunner Coverage Results" MODIFIED="1574096830862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Footlocker$Runner.ic" NAME="Runner Coverage Results" MODIFIED="1573948348892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Footlocker$TestRunner__1_.ic" NAME="TestRunner (1) Coverage Results" MODIFIED="1573179954834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.footlocker.runner.*</FILTER>
