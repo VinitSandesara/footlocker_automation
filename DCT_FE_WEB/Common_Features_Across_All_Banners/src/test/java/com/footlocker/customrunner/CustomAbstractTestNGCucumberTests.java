@@ -1,5 +1,5 @@
 package com.footlocker.customrunner;
-
+/*
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -12,14 +12,11 @@ import org.testng.annotations.Test;
 
 import io.cucumber.testng.CucumberFeatureWrapper;
 import io.cucumber.testng.PickleEventWrapper;
-import io.cucumber.testng.TestNGCucumberRunner;
+import io.cucumber.testng.TestNGCucumberRunner; */
 
-/**
-* rathr1
-*
-**/
+
 public class CustomAbstractTestNGCucumberTests {
-	private TestNGCucumberRunner testNGCucumberRunner;
+/*	private TestNGCucumberRunner testNGCucumberRunner;
 
     @BeforeClass(alwaysRun = true)
     public void setUpClass() {
@@ -32,12 +29,7 @@ public class CustomAbstractTestNGCucumberTests {
         testNGCucumberRunner.runScenario(pickleWrapper.getPickleEvent());
     }
 
-    /**
-     * Returns two dimensional array of PickleEventWrapper scenarios
-     * with their associated CucumberFeatureWrapper feature.
-     *
-     * @return a two dimensional array of scenarios features.
-     */
+
     @DataProvider
     public Iterator<Object[]> scenarios() {
     	ArrayList<Object[]> modifiedList = new ArrayList<>();
@@ -53,18 +45,7 @@ public class CustomAbstractTestNGCucumberTests {
         return modifiedList.iterator();
     }
 
-    // data[0][0] ->> PickleEventWrapper
-    // data[0][1] ->> CucumberFeatureWrapper
 
-    /*
-     * private method, that will return the array list - Contains the feature which we want to execute
-     * iterate over 2d object array.
-     * using CucumberFeatureWrapper check,
-     * if feature is present
-     * 	-- add it to the array list
-     * else
-     *  -- skip
-     * */
 
     private ArrayList<Object[]> filterTheFeature(Object[][] data) {
     	String featureValue = System.getProperty("FeatureName");
@@ -108,6 +89,6 @@ public class CustomAbstractTestNGCucumberTests {
             return;
         }
         testNGCucumberRunner.finish();
-    }
+    } */
 
 }

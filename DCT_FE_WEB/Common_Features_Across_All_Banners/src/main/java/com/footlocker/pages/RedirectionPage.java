@@ -19,21 +19,25 @@ public class RedirectionPage extends BasePage {
     public CreateAccountPage VerifyCreateAnAccountPage(String PageName) {
         Selenide.refresh();
         $(VERIFY_CREATE_AN_ACCOUNT_PAGE_REDIRECTION).shouldHave(Condition.text(PageName));
+        getScenario.embed("<font size=\"5\" color=\"green\">Verified Create an account page has launched</font></b>".getBytes(),"text/html");
         return page(CreateAccountPage.class);
     }
 
     public CreateAccountPage VerifyAlmostDonePage(String PageName) {
         $(VERIFY_ALMOST_DONE_PAGE_REDIRECTION).shouldHave(Condition.text(PageName));
+        getScenario.embed("<font size=\"5\" color=\"green\">Verified almost done page</font></b>".getBytes(),"text/html");
         return page(CreateAccountPage.class);
     }
 
     public LoginPage VerifySuccessPage(String PageName) {
         $(VERIFY_SUCCESS_PAGE_REDIRECTION).shouldHave(Condition.text(PageName));
+        getScenario.embed("<font size=\"5\" color=\"green\">Verified success page</font></b>".getBytes(),"text/html");
         return page(LoginPage.class);
     }
 
     public LoginPage VerifyActivateYourAccountPage(String PageName) {
         $(VERIFY_ACTIVATE_YOUR_ACCOUNT_PAGE_REDIRECTION).shouldHave(Condition.text(PageName));
+        getScenario.embed("<font size=\"5\" color=\"green\">Verified activate your account page</font></b>".getBytes(),"text/html");
         return page(LoginPage.class);
     }
 

@@ -13,24 +13,25 @@ public class HomePage extends BasePage {
     private final By DESKTOP_BROWSER_VERIFY_SIGNIN_DIALOG_BOX = getLocator("Desktop.Browser.Verify.SignIn.Dialog");
     private final By CREATE_AN_ACCOUNT_LINK = getLocator("CreateAnAccount.Link");
     private final By DESKTOP_BROWSER_LOGOUT_LINK = getLocator("Desktop.Browser.Click.Logout.Link");
-      private final By DESKTOP_BROWSER_LOGOUT_BUTTON = getLocator("Desktop.Browser.Click.Logout.Button");
-
-
+    private final By DESKTOP_BROWSER_LOGOUT_BUTTON = getLocator("Desktop.Browser.Click.Logout.Button");
 
 
     public HomePage DesktopBrowser_ClickOnLoginLink() {
         $(DESKTOP_BROWSER_LOGIN_LINK).click();
-        System.out.println("");
+        getScenario.embed("<font size=\"5\" color=\"green\">Clicked on login link</font></b>".getBytes(),"text/html");
+
         return page(HomePage.class);
     }
 
     public HomePage DesktopBrowser_VerifySignInDialogBox() {
         $(DESKTOP_BROWSER_VERIFY_SIGNIN_DIALOG_BOX).shouldHave(Condition.text("Sign In"));
+        getScenario.embed("<font size=\"5\" color=\"green\">Verified Sign in dialog box has been launched</font></b>".getBytes(),"text/html");
         return page(HomePage.class);
     }
 
     public RedirectionPage ClickCreateAnAccountLinkFromSignInDialog() {
         $(CREATE_AN_ACCOUNT_LINK).click();
+        getScenario.embed("<font size=\"5\" color=\"green\">Clicked on create an account link</font></b>".getBytes(),"text/html");
         return page(RedirectionPage.class);
     }
 

@@ -27,10 +27,20 @@
         <allure-cucumber.version>1.6.3</allure-cucumber.version>
         <allure-maven.version>2.8</allure-maven.version>
         <slf4j.version>1.7.21</slf4j.version>
+        <courgette.version>4.0.2-snapshot</courgette.version>
+        <extentreport.version>3.1.5</extentreport.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>jcenter</id>
+            <url>https://jcenter.bintray.com/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
-        <dependency>
+
+        <!--dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java8</artifactId>
             <version>${cucumber.version}</version>
@@ -42,16 +52,34 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency-->
+
+
+        <dependency>
+            <groupId>io.github.prashant-ramcharan</groupId>
+            <artifactId>courgette-jvm</artifactId>
+            <version>${courgette.version}</version>
+        </dependency>
+
+        <!--dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-picocontainer</artifactId>
             <version>1.2.5</version>
             <scope>test</scope>
-        </dependency>
+        </dependency-->
+
         <dependency>
             <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>${cucumber.version}</version>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>5.0.0-RC1</version>
+            <scope>test</scope>
         </dependency>
+
+
+
         <dependency>
             <groupId>ru.yandex.qatools.allure</groupId>
             <artifactId>allure-cucumber-jvm-adaptor</artifactId>
@@ -118,19 +146,43 @@
         </dependency>
 
         <!-- Extent Report -->
-        <dependency>
+        <!--dependency>
             <groupId>com.vimalselvam</groupId>
             <artifactId>cucumber-extentsreport</artifactId>
             <version>3.1.1</version>
-        </dependency>
+        </dependency-->
         <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
-            <version>4.0.6</version>
+            <version>${extentreport.version}</version>
         </dependency>
 
 
     </dependencies>
+
+    <!--build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
+                <configuration>
+                    <includes>
+                        <include>**/*Runner.java</include>
+                    </includes>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.surefire</groupId>
+                        <artifactId>surefire-junit47</artifactId>
+                        <version>2.22.0</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+
+    </build-->
+
 
     <build>
         <plugins>
@@ -153,7 +205,7 @@
                         <!--suppress UnresolvedMavenProperty -->
                         <FeatureName>${feature.name}</FeatureName>
                         <!--suppress UnresolvedMavenProperty -->
-                        <TagName>${tag.name}</TagName>
+                        <TagName>${cucumber.tags}</TagName>
                         <!--suppress UnresolvedMavenProperty -->
                         <BrowserType>${browser.type}</BrowserType>
                         <!--suppress UnresolvedMavenProperty -->
@@ -173,7 +225,7 @@
                         <!--suppress UnresolvedMavenProperty -->
                         <include>${runner.name}</include> <!-- This will include all the file
 							which has "Runner" as suffix in their name !-->
-                        <!--include>**/*Runner.java</include !-->
+                        <!--include>**/*Runner.java</include-->
 
                     </includes>
                     <suiteXmlFiles>

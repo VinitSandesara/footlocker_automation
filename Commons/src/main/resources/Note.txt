@@ -45,3 +45,48 @@ Post SSO Email subject label
 
 FLCA : This doesn't have SSO integrated yet subject will be
     "Your Foot Locker Canada"
+
+
+====================================================================================
+
+If the feature file steps are not recognized follow below steps
+
+====== Option # 1 if this doesn't work out try option# 2 =======
+
+If the steps are still not recognized. Re-import cucumber libraries
+Example : in this example i am importing En using BaseSteps. What i did delete statement "extents BaseSteps"
+and added "implement En". Delete it "implement En" and re added "extends BaseSteps" and it worked.
+
+====== Option # 2 =======
+
+1) Fully uninstall inlliJ Idea using instruction listed in below link
+
+    https://intellij-support.jetbrains.com/hc/en-us/articles/206544519
+
+2) Re install inlliJ idea
+
+3) If the steps are still not recognized. Re-import cucumber libraries
+    Example : in this example i am importing En using BaseSteps. What i did delete statement "extents BaseSteps"
+    and added "implement En". Delete it "implement En" and re added "extends BaseSteps" and it worked.
+
+====================================================================================
+
+how to change font size of inlliJ ide project window.
+
+    https://intellij-support.jetbrains.com/hc/en-us/community/posts/205814359-How-to-change-the-font-size-of-the-project-window
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

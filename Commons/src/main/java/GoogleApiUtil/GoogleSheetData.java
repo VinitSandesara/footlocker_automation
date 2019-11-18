@@ -126,10 +126,12 @@ public class GoogleSheetData {
 
                     for (int i = 0; i < val.size(); i++) {
 
+                        String input = ListOfRequiredFields.get(j);
+                        String output = val.get(i).toString();
 
                         if (val.get(i).toString().equalsIgnoreCase(ListOfRequiredFields.get(j))) {
                             // colIndex.put(ListOfRequiredFields.get(i), i);
-                            colIndex.put(ListOfRequiredFields.get(i), CellValue.get(0).get(i).toString());
+                            colIndex.put(ListOfRequiredFields.get(j), CellValue.get(0).get(i).toString());
                             counter++;
                             break;
 
@@ -215,7 +217,7 @@ public class GoogleSheetData {
 
     }
 
-    public static void HighlightRowOnceUserRegistered(String ExcelSheetName, int row) {
+    public static void HighlightRowOnceUserRegistered(String ExcelSheetName, int row , int sheetIndex, String RowEndCol) {
 
        /* List<String> list = new ArrayList<String>(Arrays.asList(FromRowToColSelection.split(":")));
 
@@ -229,8 +231,8 @@ public class GoogleSheetData {
                     row - 1,
                     row,
                     0,
-                    GoogleSheetAPI_PostCall.getResponse(ExcelSheetName, "A" + row + "", "G" + row + "").getValues().get(0).size() + 1,
-                    1091307946);
+                    GoogleSheetAPI_PostCall.getResponse(ExcelSheetName, "A" + row + "", RowEndCol + row + "").getValues().get(0).size() + 1,
+                    sheetIndex);
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -91,6 +91,8 @@ public class CreateAccountPage extends BasePage {
             $(CREATE_USER_DOB_DD_TEXTBOX).val(RowDataFromExcel.get("DOB_DD"));
             $(CREATE_USER_DOB_YYYY_TEXTBOX).val(RowDataFromExcel.get("DOB_YYYY"));
 
+         getScenario.embed("<font size=\"5\" color=\"green\">Filled all required fields</font></b>".getBytes(),"text/html");
+
         return page(CreateAccountPage.class);
 
     }
@@ -131,6 +133,7 @@ public class CreateAccountPage extends BasePage {
 
     public RedirectionPage ClickCreateAnAccountButton() {
         $(CREATE_USER_CREATE_AN_ACCOUNT_BUTTON).click();
+        getScenario.embed("<font size=\"5\" color=\"green\">Clicked on Create an account button</font></b>".getBytes(),"text/html");
         return page(RedirectionPage.class);
     }
 

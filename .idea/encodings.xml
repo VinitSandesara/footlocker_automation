@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+  <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Commons/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DCT_FE_WEB" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DCT_FE_WEB/FLCA_Specific_Features" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DCT_FE_WEB/FLCA_Specific_Features/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DCT_FE_WEB/FLCA_Specific_Features/src/main/resources" charset="UTF-8" />
   </component>
 </project>

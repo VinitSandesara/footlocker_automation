@@ -1,14 +1,18 @@
 package com.footlocker.steps;
 
 import EmailVerificationUtil.VerifyEmailThruRestApi;
+import ExtentReport.ExtentManager;
+import ExtentReport.ExtentTestManager;
 import GoogleApiUtil.GoogleSheetData;
 import Jenkins.JenkinsParamsVariable;
+import com.aventstack.extentreports.Status;
 import com.codeborne.selenide.Configuration;
 import com.footlocker.core.BaseSteps;
 import com.footlocker.pages.CreateAccountPage;
 import com.footlocker.pages.HomePage;
 import com.footlocker.pages.LoginPage;
 import com.footlocker.pages.RedirectionPage;
+import io.cucumber.java8.En;
 
 
 import java.util.List;
@@ -17,90 +21,107 @@ import static com.footlocker.core.BasePage.goToHomePage;
 
 public class RegisterMultiUserSteps extends BaseSteps {
 
+    int StartingRowIndex = 2;
     int rowIndex = 2;
+    public List<List<Object>> RowDataFromExcel;
+    public int i = 0;
 
     public RegisterMultiUserSteps() {
 
 
-        And("^I register multiple users for banners FS and EB in one go which are mentioned in google spreadsheet$", () -> {
+        And("^I register list of users whose runmode is Y in google spreadsheet \"([^\"]*)\" for banners FS and EB$", (String gSheetName) -> {
 
 
-            List<List<Object>> RowDataFromExcel = GoogleSheetData.getGoogleSheetFilledCellData(JenkinsParamsVariable.GoogleDriveSpreadSheetName);
+            /* Register multiple users in one go with Runmode is Y */
 
+            String scenario = Hooks.getScenario().getName();
 
-            for (List<Object> row : RowDataFromExcel) {
+            RowDataFromExcel = GoogleSheetData.getGoogleSheetFilledCellData(gSheetName);
 
+            for (i = 0; i <= RowDataFromExcel.size(); i++) {
 
-                Configuration.baseUrl = GoogleSheetData.getCellValueBasedOnColumnName(
-                        JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                        rowIndex,
-                        "Banner"
-                );
+                if (StartingRowIndex != RowDataFromExcel.size() + 2) {
 
-                SelenideConfiguration.driver.get(Configuration.baseUrl);
+                    if (GoogleSheetData.getCellValueBasedOnColumnName(gSheetName, StartingRowIndex, "Runmode").equalsIgnoreCase("Y")) {
 
-                update(goToHomePage()
-                        .DesktopBrowser_ClickOnLoginLink()
-                        .DesktopBrowser_VerifySignInDialogBox()
-                        .ClickCreateAnAccountLinkFromSignInDialog()
-                        .VerifyCreateAnAccountPage("Create Account")
+                        // ExtentTestManager.getTest(scenario).log(Status.PASS, "Scenario " + scenario + " passed");
+                        // Hooks.getScenario().write("<<<===========>>>" + scenario);
 
+                        String UserEmail = GoogleSheetData.getCellValueBasedOnColumnName(gSheetName, StartingRowIndex, "Email");
+                        Configuration.baseUrl = GoogleSheetData.getCellValueBasedOnColumnName(gSheetName, StartingRowIndex, "Banner");
 
-                        // System.out.println("HARD STOP");
+                        SelenideConfiguration.driver.get(Configuration.baseUrl);
 
-                        // update(com.codeborne.selenide.Selenide.page(CreateAccountPage.class)
-                        .InputCreateAccountFieldsBasedOnSpecificExcelRowData(
-                                rowIndex,
-                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                "FirstName,LastName,Email,Password,DOB_MM,DOB_DD,DOB_YYYY")
-                        .ClickCreateAnAccountButton()
-                        .VerifyAlmostDonePage("Almost Done"));
+                        update(goToHomePage(Hooks.getScenario(), UserEmail)
+                                .DesktopBrowser_ClickOnLoginLink()
+                                .DesktopBrowser_VerifySignInDialogBox()
+                                .ClickCreateAnAccountLinkFromSignInDialog()
+                                .VerifyCreateAnAccountPage("Create Account")
 
+                                .InputCreateAccountFieldsBasedOnSpecificExcelRowData(
+                                        StartingRowIndex,
+                                        gSheetName,
+                                        "FirstName,LastName,Email,Password,DOB_MM,DOB_DD,DOB_YYYY")
+                                .ClickCreateAnAccountButton()
+                                .VerifyAlmostDonePage("Almost Done"));
 
-                VerifyEmailThruRestApi.HitEmailDomainInbox_FetchEmailFromInbox_ParseClickHereUrlFromEmail(
-                        GoogleSheetData.getCellValueBasedOnColumnName(
-                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                rowIndex,
-                                "Email"),
-
-                        GoogleSheetData.getCellValueBasedOnColumnName(
-                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                rowIndex,
-                                "EmailSubject"),
-
-                        JenkinsParamsVariable.GoogleDriveSpreadSheetName
-                );
-
-                SelenideConfiguration.driver.get(VerifyEmailThruRestApi.newUserValidationUrlFromEmail);
-
-
-                update(com.codeborne.selenide.Selenide.page(RedirectionPage.class)
-                        .VerifySuccessPage("Success!")
-
-                        .InputEmailTextbox(
+                        VerifyEmailThruRestApi.HitEmailDomainInbox_FetchEmailFromInbox_ParseClickHereUrlFromEmail(
                                 GoogleSheetData.getCellValueBasedOnColumnName(
-                                        JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                        rowIndex,
-                                        "Email"))
+                                        gSheetName,
+                                        StartingRowIndex,
+                                        "Email"),
 
-                        .InputPasswordTextbox(
                                 GoogleSheetData.getCellValueBasedOnColumnName(
-                                        JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                        rowIndex,
-                                        "Password"))
+                                        gSheetName,
+                                        StartingRowIndex,
+                                        "EmailSubject"),
+
+                                gSheetName);
+
+                        SelenideConfiguration.driver.get(VerifyEmailThruRestApi.newUserValidationUrlFromEmail);
+
+                        update(com.codeborne.selenide.Selenide.page(RedirectionPage.class)
+                                .VerifySuccessPage("Success!")
+
+                                .InputEmailTextbox(
+                                        GoogleSheetData.getCellValueBasedOnColumnName(
+                                                gSheetName,
+                                                StartingRowIndex,
+                                                "Email"))
+
+                                .InputPasswordTextbox(
+                                        GoogleSheetData.getCellValueBasedOnColumnName(
+                                                gSheetName,
+                                                StartingRowIndex,
+                                                "Password"))
 
 
-                        .ClickSignInButton(
-                                GoogleSheetData.getCellValueBasedOnColumnName(
-                                        JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                        rowIndex,
-                                        "EmailSubject"))
+                                .ClickSignInButton(
+                                        GoogleSheetData.getCellValueBasedOnColumnName(
+                                                gSheetName,
+                                                StartingRowIndex,
+                                                "EmailSubject"))
 
 
-                        .LogOut());
+                                .LogOut());
 
 
-                GoogleSheetData.CopySourceSheetDataToDestinationSheetOnceUserRegisteredSuccess(JenkinsParamsVariable.GoogleDriveSpreadSheetName, rowIndex);
+                        GoogleSheetData.CopySourceSheetDataToDestinationSheetOnceUserRegisteredSuccess(gSheetName, StartingRowIndex);
+
+
+                        i--;
+                        RowDataFromExcel = GoogleSheetData.getGoogleSheetFilledCellData(gSheetName);
+                    } else {
+                        GoogleSheetData.HighlightRowOnceUserRegistered(
+                                gSheetName,
+                                StartingRowIndex,
+                                1091307946, "I");
+                        StartingRowIndex++;
+                    }
+                } else {
+                    System.out.println("Hello");
+                    break;
+                }
 
 
             }
@@ -109,166 +130,113 @@ public class RegisterMultiUserSteps extends BaseSteps {
         });
 
 
-        And("^I register multiple users for banners FL, LFL, FA and CS in one go which are mentioned in google spreadsheet$", () -> {
+        And("^I register list of users whose runmode is Y in google spreadsheet \"([^\"]*)\" for banners FL, LFL, FA and CS$", (String gSheetName) -> {
 
 
-            List<List<Object>> RowDataFromExcel = GoogleSheetData.getGoogleSheetFilledCellData(JenkinsParamsVariable.GoogleDriveSpreadSheetName);
+            /* Register multiple users in one go with Runmode is Y */
+
+            String scenario = Hooks.getScenario().getName();
+
+            RowDataFromExcel = GoogleSheetData.getGoogleSheetFilledCellData(gSheetName);
+
+            for (i = 0; i <= RowDataFromExcel.size(); i++) {
+
+                if (StartingRowIndex != RowDataFromExcel.size() + 2) {
 
 
-            for (List<Object> row : RowDataFromExcel) {
+                    if (GoogleSheetData.getCellValueBasedOnColumnName(gSheetName, StartingRowIndex, "Runmode").equalsIgnoreCase("Y")) {
+
+                        /* ExtentTestManager.startTest(scenario);
+                        // ExtentTestManager.startTestUsingNode(scenario);
+                        // ExtentTestManager.getTest(scenario).log(Status.PASS, "Scenario " + scenario + " passed");
+                        Hooks.getScenario().write("<<<===========>>>" + scenario);
+                        ExtentTestManager.endTest();
+                        ExtentManager.getInstance().flush(); */
 
 
-                Configuration.baseUrl = GoogleSheetData.getCellValueBasedOnColumnName(
-                        JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                        rowIndex,
-                        "Banner"
-                );
+                        String UserEmail = GoogleSheetData.getCellValueBasedOnColumnName(gSheetName, StartingRowIndex, "Email");
+                        Configuration.baseUrl = GoogleSheetData.getCellValueBasedOnColumnName(gSheetName, StartingRowIndex, "Banner");
 
-                SelenideConfiguration.driver.get(Configuration.baseUrl);
+                        SelenideConfiguration.driver.get(Configuration.baseUrl);
 
-                update(goToHomePage()
-                        .DesktopBrowser_ClickOnLoginLink()
-                        .DesktopBrowser_VerifySignInDialogBox()
-                        .ClickCreateAnAccountLinkFromSignInDialog()
-                        .VerifyCreateAnAccountPage("Create Account")
+                        update(goToHomePage(Hooks.getScenario(), UserEmail)
+                                .DesktopBrowser_ClickOnLoginLink()
+                                .DesktopBrowser_VerifySignInDialogBox()
+                                .ClickCreateAnAccountLinkFromSignInDialog()
+                                .VerifyCreateAnAccountPage("Create Account")
 
+                                .InputCreateAccountFieldsBasedOnSpecificExcelRowData(
+                                        StartingRowIndex,
+                                        gSheetName,
+                                        "FirstName,LastName,Email,Password,DOB_MM,DOB_DD,DOB_YYYY")
+                                .RadioSelectionSkipVIPOptionOrClubRewardsOption(
+                                        GoogleSheetData.getCellValueBasedOnColumnName(
+                                                gSheetName,
+                                                StartingRowIndex,
+                                                "VIP_ClubRewards_Or_Skip"
+                                        ))
+                                .ClickCreateAnAccountButton()
+                                .VerifyAlmostDonePage("Almost Done"));
 
-                        // System.out.println("HARD STOP");
-
-                        // update(com.codeborne.selenide.Selenide.page(CreateAccountPage.class)
-                        .InputCreateAccountFieldsBasedOnSpecificExcelRowData(
-                                rowIndex,
-                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                "FirstName,LastName,Email,Password,DOB_MM,DOB_DD,DOB_YYYY")
-                        .RadioSelectionSkipVIPOptionOrClubRewardsOption(
+                        VerifyEmailThruRestApi.HitEmailDomainInbox_FetchEmailFromInbox_ParseClickHereUrlFromEmail(
                                 GoogleSheetData.getCellValueBasedOnColumnName(
-                                        JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                        rowIndex,
-                                        "VIP_ClubRewards_Or_Skip"
-                                ))
-                        .ClickCreateAnAccountButton()
-                        .VerifyAlmostDonePage("Almost Done"));
+                                        gSheetName,
+                                        StartingRowIndex,
+                                        "Email"),
 
-
-                VerifyEmailThruRestApi.HitEmailDomainInbox_FetchEmailFromInbox_ParseClickHereUrlFromEmail(
-                        GoogleSheetData.getCellValueBasedOnColumnName(
-                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                rowIndex,
-                                "Email"),
-
-                        GoogleSheetData.getCellValueBasedOnColumnName(
-                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                rowIndex,
-                                "EmailSubject"),
-
-                        JenkinsParamsVariable.GoogleDriveSpreadSheetName
-                );
-
-                SelenideConfiguration.driver.get(VerifyEmailThruRestApi.newUserValidationUrlFromEmail);
-
-
-                update(com.codeborne.selenide.Selenide.page(RedirectionPage.class)
-                        .VerifySuccessPage("Success!")
-
-                        .InputEmailTextbox(
                                 GoogleSheetData.getCellValueBasedOnColumnName(
-                                        JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                        rowIndex,
-                                        "Email"))
+                                        gSheetName,
+                                        StartingRowIndex,
+                                        "EmailSubject"),
 
-                        .InputPasswordTextbox(
-                                GoogleSheetData.getCellValueBasedOnColumnName(
-                                        JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                        rowIndex,
-                                        "Password"))
+                                gSheetName);
+
+                        SelenideConfiguration.driver.get(VerifyEmailThruRestApi.newUserValidationUrlFromEmail);
+
+                        update(com.codeborne.selenide.Selenide.page(RedirectionPage.class)
+                                .VerifySuccessPage("Success!")
+
+                                .InputEmailTextbox(
+                                        GoogleSheetData.getCellValueBasedOnColumnName(
+                                                gSheetName,
+                                                StartingRowIndex,
+                                                "Email"))
+
+                                .InputPasswordTextbox(
+                                        GoogleSheetData.getCellValueBasedOnColumnName(
+                                                gSheetName,
+                                                StartingRowIndex,
+                                                "Password"))
 
 
-                        .ClickSignInButton(
-                                GoogleSheetData.getCellValueBasedOnColumnName(
-                                        JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                        rowIndex,
-                                        "EmailSubject"))
+                                .ClickSignInButton(
+                                        GoogleSheetData.getCellValueBasedOnColumnName(
+                                                gSheetName,
+                                                StartingRowIndex,
+                                                "EmailSubject"))
 
 
-                        .LogOut());
+                                .LogOut());
 
 
-                GoogleSheetData.CopySourceSheetDataToDestinationSheetOnceUserRegisteredSuccess(JenkinsParamsVariable.GoogleDriveSpreadSheetName, rowIndex);
+                        GoogleSheetData.CopySourceSheetDataToDestinationSheetOnceUserRegisteredSuccess(gSheetName, StartingRowIndex);
+
+                        i--;
+                        RowDataFromExcel = GoogleSheetData.getGoogleSheetFilledCellData(gSheetName);
+                    } else {
+                        GoogleSheetData.HighlightRowOnceUserRegistered(
+                                gSheetName,
+                                StartingRowIndex,
+                                639893326, "J");
+                        StartingRowIndex++;
+                    }
+                } else {
+                    System.out.println("Hello");
+                    break;
+                }
 
 
             }
-
-
-
-
-
-
-
-
-          /*  List<List<Object>> RowDataFromExcel = GoogleSheetData.getGoogleSheetFilledCellData(JenkinsParamsVariable.GoogleDriveSpreadSheetName);
-
-
-            for (List<Object> row : RowDataFromExcel) {
-
-
-                System.out.println("HARD STOP");
-
-                update(com.codeborne.selenide.Selenide.page(CreateAccountPage.class)
-                        .MultiUser_FillRequiredNewUserRegistrationForm(
-                                String.valueOf(row.get(0)),
-                                String.valueOf(row.get(1)),
-                                String.valueOf(row.get(2)),
-                                String.valueOf(row.get(3)),
-                                String.valueOf(row.get(4)),
-                                String.valueOf(row.get(5)),
-                                String.valueOf(row.get(6))
-                        )
-                        /*  .RadioSelectionSkipVIPOptionOrClubRewardsOption(
-                                  "I" + rowIndex + "",
-                                  JenkinsParamsVariable.GoogleDriveSpreadSheetName)
-                        .ClickCreateAnAccountButton()
-                        .VerifyAlmostDonePage("Almost Done"));
-
-
-                VerifyEmailThruRestApi.HitEmailDomainInbox_FetchEmailFromInbox_ParseClickHereUrlFromEmail(
-                        GoogleSheetData.getSpecificColFromGoogleSheet(
-                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                "C",
-                                rowIndex),
-
-                        GoogleSheetData.getSpecificColFromGoogleSheet(
-                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                "H",
-                                rowIndex),
-                        "");
-
-                SelenideConfiguration.driver.get(VerifyEmailThruRestApi.newUserValidationUrlFromEmail);
-
-                update(com.codeborne.selenide.Selenide.page(RedirectionPage.class)
-                        .VerifySuccessPage("Success!")
-                        .InputEmailTextbox(
-                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                "C",
-                                rowIndex)
-
-                        .InputPasswordTextbox(
-                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                "D",
-                                rowIndex)
-                        .ClickSignInButton(
-                                JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                                "H",
-                                rowIndex)
-                        .LogOut()
-                        .DesktopBrowser_ClickOnLoginLink()
-                        .DesktopBrowser_VerifySignInDialogBox()
-                        .ClickCreateAnAccountLinkFromSignInDialog()
-                );
-
-                GoogleSheetData.CopySourceSheetDataToDestinationSheetOnceUserRegisteredSuccess(JenkinsParamsVariable.GoogleDriveSpreadSheetName, rowIndex);
-                //rowIndex++;
-
-            } */
 
 
         });

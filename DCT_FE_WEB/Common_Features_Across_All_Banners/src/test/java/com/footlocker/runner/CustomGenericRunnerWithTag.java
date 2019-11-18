@@ -1,16 +1,16 @@
 package com.footlocker.runner;
 
-import com.footlocker.customrunner.CustomAbstractTestNGCucumberTestsWithTag;
-import io.cucumber.testng.CucumberOptions;
+/*import com.footlocker.customrunner.CustomAbstractTestNGCucumberTestsWithTag;
+import io.cucumber.testng.CucumberOptions;*/
 
 
-@CucumberOptions(
+/*@CucumberOptions(
         features = {"src/test/resources"},
         glue = {"com.footlocker.steps"},
         dryRun = false,
         monochrome = true,
         plugin = {"pretty", "json:target/CucumberHtmlReport.json"}
-)
-public class CustomGenericRunnerWithTag extends CustomAbstractTestNGCucumberTestsWithTag {
+)*/
+public class CustomGenericRunnerWithTag /*extends CustomAbstractTestNGCucumberTestsWithTag*/ {
 
 }

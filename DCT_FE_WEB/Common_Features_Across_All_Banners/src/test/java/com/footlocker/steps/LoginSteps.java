@@ -5,6 +5,7 @@ import Jenkins.JenkinsParamsVariable;
 import com.footlocker.core.BaseSteps;
 import com.footlocker.pages.LoginPage;
 import com.footlocker.pages.RedirectionPage;
+import io.cucumber.java8.En;
 
 
 public class LoginSteps extends BaseSteps {

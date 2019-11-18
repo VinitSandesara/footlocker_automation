@@ -11,7 +11,10 @@ import com.footlocker.pages.CreateAccountPage;
 import com.footlocker.pages.HomePage;
 import com.footlocker.pages.RedirectionPage;
 import cucumber.api.DataTable;
-import io.cucumber.core.api.Scenario;
+import cucumber.api.Scenario;
+import io.cucumber.java8.En;
+
+//import io.cucumber.core.api.Scenario;
 
 import static com.footlocker.core.BasePage.goToHomePage;
 
@@ -32,7 +35,7 @@ public class AccountSteps extends BaseSteps {
             );
 
             SelenideConfiguration.driver.get(Configuration.baseUrl);*/
-            update(goToHomePage());
+            update(goToHomePage(null,""));
         });
 
 
@@ -45,10 +48,15 @@ public class AccountSteps extends BaseSteps {
                     Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber),
                     "Banner"
             ); */
+           // String sheetNameAre = System.getProperty("SpreadSheetName");
+            //System.out.println("********** VALUES FROM HASHMAP IS **********" +  Hooks.getSheetNameWithItsRowNumber.get(Hooks.key));
+          //  Hooks.scenario.write("===== VALUES ARE =====" +  sheetNameAre);
 
+
+           Hooks.getScenario().write("Your scenario name is ===>" + Hooks.getScenario().getName());
             SelenideConfiguration.driver.get(url);
             String value = Hooks.key;
-            update(goToHomePage());
+            update(goToHomePage(Hooks.getScenario(), "Hello@gmal.com"));
 
         });
 
@@ -201,7 +209,7 @@ public class AccountSteps extends BaseSteps {
         And("^Finally once user has successfully been registered i will highlight that specific row in excel sheet to filter out$", () ->
                 GoogleSheetData.HighlightRowOnceUserRegistered(
                         JenkinsParamsVariable.GoogleDriveSpreadSheetName,
-                        Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber)));
+                        Integer.parseInt(JenkinsParamsVariable.GoogleDriveSpreadSheetRowNumber),639893326,"J"));
 
         And("^Finally once user has successfully been registered i will move that specific row to registered user spreadsheet$", () ->
                 GoogleSheetData.CopySourceSheetDataToDestinationSheetOnceUserRegisteredSuccess(

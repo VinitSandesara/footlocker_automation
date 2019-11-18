@@ -395,7 +395,7 @@ public class GoogleSheetAPI_PostCall {
     }
 
 
-    public static BatchUpdateSpreadsheetResponse HighlightRowOnceUserRegistered(String sheetId, int setStartRowIndex, int setEndRowIndex, int setStartColumnIndex, int setEndColumnIndex, int sheetIndex)
+    public static BatchUpdateSpreadsheetResponse HighlightRowOnceUserRegistered(String sheetId, int setStartRowIndex, int setEndRowIndex, int setStartColumnIndex, int setEndColumnIndex, int sheetIndex )
             throws IOException {
         // [START sheets_conditional_formatting]
         Sheets service = getSheetsService();
@@ -511,7 +511,7 @@ public class GoogleSheetAPI_PostCall {
         int row = 2;
         String Col = "Password";
         int index = 0;
-        List<List<Object>> colHeader = GoogleSheetAPI_PostCall.getResponse("NewUser_FS_EB", "A1", "M1").getValues();
+        List<List<Object>> colHeader = GoogleSheetAPI_PostCall.getResponse("Update", "A1", "A100").getValues();
 
 
 
@@ -521,6 +521,14 @@ public class GoogleSheetAPI_PostCall {
         //int count = values.get(0).size();
 
         for (List<Object> val : colHeader) {
+
+            String v = val.get(0).toString().replaceAll("\\s+","-");
+
+            String finalS = "http://www.codeslaystaging.online/kraaftemporium/product/";
+
+            String finalString = finalS + v ;
+
+
 
             for (int i = 0; i <= val.size(); i++) {
 

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.github.prashant-ramcharan:courgette-jvm:4.0.2-snapshot">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/github/prashant-ramcharan/courgette-jvm/4.0.2-snapshot/courgette-jvm-4.0.2-snapshot.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/io/github/prashant-ramcharan/courgette-jvm/4.0.2-snapshot/courgette-jvm-4.0.2-snapshot-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/github/prashant-ramcharan/courgette-jvm/4.0.2-snapshot/courgette-jvm-4.0.2-snapshot-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

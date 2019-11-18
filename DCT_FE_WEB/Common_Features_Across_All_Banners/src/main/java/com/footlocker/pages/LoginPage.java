@@ -33,11 +33,13 @@ public class LoginPage extends BasePage {
 
     public LoginPage InputEmailTextbox(String Email) {
         $(INPUT_EMAIL_TEXTBOX).val(Email);
+        getScenario.embed("<font size=\"5\" color=\"green\">Input Email to verify register user</font></b>".getBytes(),"text/html");
         return page(LoginPage.class);
     }
 
     public LoginPage InputPasswordTextbox(String Password) {
         $(INPUT_PASSWORD_TEXTBOX).val(Password);
+        getScenario.embed("<font size=\"5\" color=\"green\">Input Password to verify register user</font></b>".getBytes(),"text/html");
         return page(LoginPage.class);
     }
 
@@ -66,6 +68,8 @@ public class LoginPage extends BasePage {
             // Pre sso
             $$(CLICK_SIGNIN_BUTTON).get(1).click();
         }
+
+        getScenario.embed("<font size=\"5\" color=\"green\">Click on Sign in button to register user</font></b>".getBytes(),"text/html");
 
         return page(HomePage.class);
     }

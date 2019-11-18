@@ -66,14 +66,14 @@ Feature: New User Registration
 
 # ========= POST SSO MULTI USERS CREATION =============
 
-  @Register_PostSSO_FS_EB_Multi_User
+  @Register_PostSSO_FS_EB_Multi_User @Register_Multi_User
   Scenario: Register Multiple users for banners FS and EB
-    Given I register multiple users for banners FS and EB in one go which are mentioned in google spreadsheet
+    Given I register list of users whose runmode is Y in google spreadsheet "NewUser_FS_EB" for banners FS and EB
 
 
-  @Register_PostSSO_FL_KFL_FA_CS_Multi_User
+  @Register_PostSSO_FL_KFL_FA_CS_Multi_User @Register_Multi_User
   Scenario: Register Multiple users for banners FL, LFL, FA and CS
-    Given I register multiple users for banners FL, LFL, FA and CS in one go which are mentioned in google spreadsheet
+    Given I register list of users whose runmode is Y in google spreadsheet "NewUser_FL_KFL_FA_CS" for banners FL, LFL, FA and CS
 
 
 # ========= PRE SSO =============
@@ -114,10 +114,14 @@ Feature: New User Registration
   @Debug_PostSSO_FS @Debug_New_Single_User
   Scenario: Register post SSO ES
     And I am on the home page test "https://www.footlocker.com/"
+    When I click on Login Link
+    Then It should give you Sign In Dialog box
+    And I click on Create an account link
 
 
   @Debug_PostSSO_FL @Debug_New_Single_User
   Scenario: Register post SSO FL
-    And I am on the home page test "https://www.eastbay.com/"
+    And I am on the home page test "https://www.gmail.com/"
+
 
   # ====================================================
