@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="816a8cf9-23d3-4831-b388-5eb229be5076" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CourgetteRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CourgetteRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/src/main/resources/Locators/homePage_Locators.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/resources/Locators/homePage_Locators.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/CreateAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/CreateAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +55,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/target/CourgetteHtmlReport/courgette-report" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.footlocker.Backup_StepsDef" />
       <recent name="com.footlocker.runner" />
@@ -66,7 +70,7 @@
       <recent name="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CourgetteJunitRunner">
+  <component name="RunManager" selected="JUnit.DebugRunner">
     <configuration name="CourgetteJunitRunner" type="JUnit" factoryName="JUnit">
       <module name="Common_Features_Across_All_Banners" />
       <option name="PACKAGE_NAME" value="com.footlocker.runner" />
@@ -169,62 +173,66 @@
       <screen x="0" y="23" width="2048" height="1004" />
     </state>
     <state x="592" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.2048.1004@0.23.2048.1004" timestamp="1573947982329" />
-    <state width="2304" height="919" key="GridCell.Tab.0.bottom" timestamp="1574096838098">
+    <state width="2304" height="586" key="GridCell.Tab.0.bottom" timestamp="1574111242166">
       <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.bottom/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012085" />
     <state width="1848" height="404" key="GridCell.Tab.0.bottom/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351022" />
     <state width="1797" height="640" key="GridCell.Tab.0.bottom/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242145" />
-    <state width="2304" height="919" key="GridCell.Tab.0.bottom/0.23.2560.1362@0.23.2560.1362" timestamp="1574096838098" />
-    <state width="2304" height="919" key="GridCell.Tab.0.center" timestamp="1574096838097">
+    <state width="2304" height="586" key="GridCell.Tab.0.bottom/0.23.2560.1362@0.23.2560.1362" timestamp="1574111242166" />
+    <state width="2304" height="586" key="GridCell.Tab.0.center" timestamp="1574111242165">
       <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.center/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012084" />
     <state width="1848" height="404" key="GridCell.Tab.0.center/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351021" />
     <state width="1797" height="640" key="GridCell.Tab.0.center/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242144" />
-    <state width="2304" height="919" key="GridCell.Tab.0.center/0.23.2560.1362@0.23.2560.1362" timestamp="1574096838097" />
-    <state width="2304" height="919" key="GridCell.Tab.0.left" timestamp="1574096838096">
+    <state width="2304" height="586" key="GridCell.Tab.0.center/0.23.2560.1362@0.23.2560.1362" timestamp="1574111242165" />
+    <state width="2304" height="586" key="GridCell.Tab.0.left" timestamp="1574111242164">
       <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.left/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012084" />
     <state width="1848" height="404" key="GridCell.Tab.0.left/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351021" />
     <state width="1797" height="640" key="GridCell.Tab.0.left/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242144" />
-    <state width="2304" height="919" key="GridCell.Tab.0.left/0.23.2560.1362@0.23.2560.1362" timestamp="1574096838096" />
-    <state width="2304" height="919" key="GridCell.Tab.0.right" timestamp="1574096838097">
+    <state width="2304" height="586" key="GridCell.Tab.0.left/0.23.2560.1362@0.23.2560.1362" timestamp="1574111242164" />
+    <state width="2304" height="586" key="GridCell.Tab.0.right" timestamp="1574111242166">
       <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.right/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012085" />
     <state width="1848" height="404" key="GridCell.Tab.0.right/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351022" />
     <state width="1797" height="640" key="GridCell.Tab.0.right/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242145" />
-    <state width="2304" height="919" key="GridCell.Tab.0.right/0.23.2560.1362@0.23.2560.1362" timestamp="1574096838097" />
-    <state width="1848" height="404" key="GridCell.Tab.1.bottom" timestamp="1574032351023">
-      <screen x="0" y="23" width="2048" height="1003" />
+    <state width="2304" height="586" key="GridCell.Tab.0.right/0.23.2560.1362@0.23.2560.1362" timestamp="1574111242166" />
+    <state width="2304" height="586" key="GridCell.Tab.1.bottom" timestamp="1574111242168">
+      <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="404" key="GridCell.Tab.1.bottom/0.23.2048.1002@0.23.2048.1002" timestamp="1574025801037" />
     <state width="1848" height="404" key="GridCell.Tab.1.bottom/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351023" />
     <state width="1848" height="405" key="GridCell.Tab.1.bottom/0.23.2048.1004@0.23.2048.1004" timestamp="1574022111925" />
     <state width="1848" height="405" key="GridCell.Tab.1.bottom/0.23.2048.1005@0.23.2048.1005" timestamp="1573960142167" />
-    <state width="1848" height="404" key="GridCell.Tab.1.center" timestamp="1574032351022">
-      <screen x="0" y="23" width="2048" height="1003" />
+    <state width="2304" height="586" key="GridCell.Tab.1.bottom/0.23.2560.1362@0.23.2560.1362" timestamp="1574111242168" />
+    <state width="2304" height="586" key="GridCell.Tab.1.center" timestamp="1574111242167">
+      <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="404" key="GridCell.Tab.1.center/0.23.2048.1002@0.23.2048.1002" timestamp="1574025801037" />
     <state width="1848" height="404" key="GridCell.Tab.1.center/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351022" />
     <state width="1848" height="405" key="GridCell.Tab.1.center/0.23.2048.1004@0.23.2048.1004" timestamp="1574022111925" />
     <state width="1848" height="405" key="GridCell.Tab.1.center/0.23.2048.1005@0.23.2048.1005" timestamp="1573960142167" />
-    <state width="1848" height="404" key="GridCell.Tab.1.left" timestamp="1574032351022">
-      <screen x="0" y="23" width="2048" height="1003" />
+    <state width="2304" height="586" key="GridCell.Tab.1.center/0.23.2560.1362@0.23.2560.1362" timestamp="1574111242167" />
+    <state width="2304" height="586" key="GridCell.Tab.1.left" timestamp="1574111242167">
+      <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="404" key="GridCell.Tab.1.left/0.23.2048.1002@0.23.2048.1002" timestamp="1574025801036" />
     <state width="1848" height="404" key="GridCell.Tab.1.left/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351022" />
     <state width="1848" height="405" key="GridCell.Tab.1.left/0.23.2048.1004@0.23.2048.1004" timestamp="1574022111925" />
     <state width="1848" height="405" key="GridCell.Tab.1.left/0.23.2048.1005@0.23.2048.1005" timestamp="1573960142167" />
-    <state width="1848" height="404" key="GridCell.Tab.1.right" timestamp="1574032351023">
-      <screen x="0" y="23" width="2048" height="1003" />
+    <state width="2304" height="586" key="GridCell.Tab.1.left/0.23.2560.1362@0.23.2560.1362" timestamp="1574111242167" />
+    <state width="2304" height="586" key="GridCell.Tab.1.right" timestamp="1574111242168">
+      <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="404" key="GridCell.Tab.1.right/0.23.2048.1002@0.23.2048.1002" timestamp="1574025801037" />
     <state width="1848" height="404" key="GridCell.Tab.1.right/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351023" />
     <state width="1848" height="405" key="GridCell.Tab.1.right/0.23.2048.1004@0.23.2048.1004" timestamp="1574022111925" />
     <state width="1848" height="405" key="GridCell.Tab.1.right/0.23.2048.1005@0.23.2048.1005" timestamp="1573960142167" />
+    <state width="2304" height="586" key="GridCell.Tab.1.right/0.23.2560.1362@0.23.2560.1362" timestamp="1574111242168" />
     <state x="173" y="23" key="SettingsEditor" timestamp="1573948061216">
       <screen x="0" y="23" width="2048" height="1004" />
     </state>
@@ -237,6 +245,10 @@
       <screen x="0" y="23" width="2048" height="1004" />
     </state>
     <state x="770" y="146" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.2048.1004@0.23.2048.1004" timestamp="1573950115038" />
+    <state x="886" y="165" width="958" height="1077" key="find.popup" timestamp="1574109858573">
+      <screen x="0" y="23" width="2560" height="1362" />
+    </state>
+    <state x="886" y="165" width="958" height="1077" key="find.popup/0.23.2560.1362@0.23.2560.1362" timestamp="1574109858573" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -248,18 +260,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/CreateAccountPage.java</url>
-          <line>140</line>
+          <line>141</line>
           <option name="timeStamp" value="150" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/CreateAccountPage.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/java/com/footlocker/pages/HomePage.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="152" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
