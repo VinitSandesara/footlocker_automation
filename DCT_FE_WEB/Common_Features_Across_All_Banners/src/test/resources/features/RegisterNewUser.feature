@@ -113,7 +113,7 @@ Feature: New User Registration
 
   @Debug_PostSSO_FS @Debug_New_Single_User
   Scenario: Register post SSO ES
-    And I am on the home page test "https://www.footlocker.com/"
+    And I am on the home page test "https://www.uat2.origin.eastbay.com/"
     When I click on Login Link
     Then It should give you Sign In Dialog box
     And I click on Create an account link
@@ -121,7 +121,7 @@ Feature: New User Registration
 
   @Debug_PostSSO_FL @Debug_New_Single_User
   Scenario: Register post SSO FL
-    And I am on the home page test "https://www.gmail.com/"
+    And I am on the home page test "https://www.uat2.origin.champssports.com/"
 
 
   # ====================================================
