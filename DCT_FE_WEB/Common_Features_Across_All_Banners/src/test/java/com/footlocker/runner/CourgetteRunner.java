@@ -48,7 +48,7 @@ public class CourgetteRunner {
        // threads = 10,
       //  runLevel = CourgetteRunLevel.SCENARIO,
         rerunFailedScenarios = false,
-        showTestOutput = true,
+        showTestOutput = false,
         reportTargetDir = "target/CourgetteHtmlReport",
         cucumberOptions = @CucumberOptions(
                 features = "src/test/resources/features",

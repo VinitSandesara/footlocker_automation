@@ -19,7 +19,7 @@ public class BasePage  {
     public static HomePage goToHomePage(Scenario scenario, String UserEmailID) {
 
         getScenario = scenario;
-        String userEmailIdLog = "<b><font size=\"5\" color=\"blue\">=== User Email ID : "+UserEmailID+" ===</font></b>";
+        String userEmailIdLog = "<b> <font size=\"5\" color=\"red\">User Email ID :- </font>  <font size=\"5\" color=\"blue\"> "+UserEmailID+" </font></b>";
         getScenario.embed(userEmailIdLog.getBytes(), "text/html");
         getScenario.embed("<font size=\"5\" color=\"green\">Navigated to home page</font></b>".getBytes(),"text/html");
 
