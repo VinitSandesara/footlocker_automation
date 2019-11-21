@@ -65,7 +65,7 @@ public class SelenideConfiguration {
 
 
         driver = new ChromeDriver(options);
-        Configuration.timeout = 20000;
+        Configuration.timeout = 10000;
       //  Configuration.baseUrl = "https://www.staging2.origin.footlocker.com/";
       //  driver.get(Configuration.baseUrl);
         WebDriverRunner.setWebDriver(driver);
@@ -151,7 +151,7 @@ public class SelenideConfiguration {
             e.printStackTrace();
         }
 
-        Configuration.timeout = 20000;
+        Configuration.timeout = 10000;
 
         WebDriverRunner.setWebDriver(driver); */
 

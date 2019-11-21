@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="816a8cf9-23d3-4831-b388-5eb229be5076" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_prashant_ramcharan_courgette_jvm_4_0_2_snapshot.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_10.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/Commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/Commons.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/resources/Locators/homePage_Locators.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/resources/Locators/homePage_Locators.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/Common_Features_Across_All_Banners.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/Common_Features_Across_All_Banners.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CourgetteRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CourgetteRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/SelenideConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/SelenideConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/DCT_FE_WEB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/DCT_FE_WEB.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/FLCA_Specific_Features/FLCA_Specific_Features.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/FLCA_Specific_Features/FLCA_Specific_Features.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Footlocker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Footlocker.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +70,7 @@
       <recent name="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DebugRunner">
+  <component name="RunManager" selected="TestNG.CourgetteRunner">
     <configuration name="CourgetteJunitRunner" type="JUnit" factoryName="JUnit">
       <module name="Common_Features_Across_All_Banners" />
       <option name="PACKAGE_NAME" value="com.footlocker.runner" />
@@ -103,10 +93,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CourgetteRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Common_Features_Across_All_Banners" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.footlocker.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.footlocker.runner" />
+      <option name="MAIN_CLASS_NAME" value="com.footlocker.runner.CourgetteRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.DebugRunner" />
       <item itemvalue="JUnit.CourgetteJunitRunner" />
+      <item itemvalue="TestNG.CourgetteRunner" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.CourgetteRunner" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -183,34 +196,34 @@
       <screen x="0" y="23" width="2048" height="1004" />
     </state>
     <state x="592" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.2048.1004@0.23.2048.1004" timestamp="1573947982329" />
-    <state width="2304" height="919" key="GridCell.Tab.0.bottom" timestamp="1574351655806">
+    <state width="2304" height="851" key="GridCell.Tab.0.bottom" timestamp="1574354489454">
       <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.bottom/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012085" />
     <state width="1848" height="404" key="GridCell.Tab.0.bottom/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351022" />
     <state width="1797" height="640" key="GridCell.Tab.0.bottom/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242145" />
-    <state width="2304" height="919" key="GridCell.Tab.0.bottom/0.23.2560.1362@0.23.2560.1362" timestamp="1574351655806" />
-    <state width="2304" height="919" key="GridCell.Tab.0.center" timestamp="1574351655805">
+    <state width="2304" height="851" key="GridCell.Tab.0.bottom/0.23.2560.1362@0.23.2560.1362" timestamp="1574354489454" />
+    <state width="2304" height="851" key="GridCell.Tab.0.center" timestamp="1574354489453">
       <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.center/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012084" />
     <state width="1848" height="404" key="GridCell.Tab.0.center/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351021" />
     <state width="1797" height="640" key="GridCell.Tab.0.center/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242144" />
-    <state width="2304" height="919" key="GridCell.Tab.0.center/0.23.2560.1362@0.23.2560.1362" timestamp="1574351655805" />
-    <state width="2304" height="919" key="GridCell.Tab.0.left" timestamp="1574351655805">
+    <state width="2304" height="851" key="GridCell.Tab.0.center/0.23.2560.1362@0.23.2560.1362" timestamp="1574354489453" />
+    <state width="2304" height="851" key="GridCell.Tab.0.left" timestamp="1574354489452">
       <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.left/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012084" />
     <state width="1848" height="404" key="GridCell.Tab.0.left/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351021" />
     <state width="1797" height="640" key="GridCell.Tab.0.left/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242144" />
-    <state width="2304" height="919" key="GridCell.Tab.0.left/0.23.2560.1362@0.23.2560.1362" timestamp="1574351655805" />
-    <state width="2304" height="919" key="GridCell.Tab.0.right" timestamp="1574351655806">
+    <state width="2304" height="851" key="GridCell.Tab.0.left/0.23.2560.1362@0.23.2560.1362" timestamp="1574354489452" />
+    <state width="2304" height="851" key="GridCell.Tab.0.right" timestamp="1574354489454">
       <screen x="0" y="23" width="2560" height="1362" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.right/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012085" />
     <state width="1848" height="404" key="GridCell.Tab.0.right/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351022" />
     <state width="1797" height="640" key="GridCell.Tab.0.right/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242145" />
-    <state width="2304" height="919" key="GridCell.Tab.0.right/0.23.2560.1362@0.23.2560.1362" timestamp="1574351655806" />
+    <state width="2304" height="851" key="GridCell.Tab.0.right/0.23.2560.1362@0.23.2560.1362" timestamp="1574354489454" />
     <state width="2304" height="586" key="GridCell.Tab.1.bottom" timestamp="1574111242168">
       <screen x="0" y="23" width="2560" height="1362" />
     </state>
@@ -297,10 +310,10 @@
     <SUITE FILE_PATH="coverage/Footlocker$TestRunner.ic" NAME="TestRunner Coverage Results" MODIFIED="1573581126489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.footlocker.runner.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Footlocker$CourgetteRunner.ic" NAME="CourgetteRunner Coverage Results" MODIFIED="1573590227793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Footlocker$DebugRunner.ic" NAME="DebugRunner Coverage Results" MODIFIED="1574351587099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Footlocker$CourgetteRunner.ic" NAME="CourgetteRunner Coverage Results" MODIFIED="1574354469059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.footlocker.runner.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Footlocker$DebugRunner.ic" NAME="DebugRunner Coverage Results" MODIFIED="1574351587099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="masterDetails">
     <states>

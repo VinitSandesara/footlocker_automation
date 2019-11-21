@@ -11,11 +11,17 @@ import courgette.api.CourgetteRunLevel;
 import courgette.api.junit.Courgette;
 import courgette.api.CucumberOptions;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.runner.RunWith;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 import org.testng.annotations.AfterClass;
 import courgette.api.testng.TestNGCourgette;
+
+import java.io.File;
+import java.io.IOException;
+
+
 
 /* Using Junit
 
@@ -46,14 +52,14 @@ public class CourgetteRunner {
 @Test
 @CourgetteOptions(
        // threads = 10,
-      //  runLevel = CourgetteRunLevel.SCENARIO,
+       // runLevel = CourgetteRunLevel.FEATURE,
         rerunFailedScenarios = false,
         showTestOutput = false,
         reportTargetDir = "target/CourgetteHtmlReport",
         cucumberOptions = @CucumberOptions(
                 features = "src/test/resources/features",
                 glue = "com.footlocker.steps",
-              //  tags = {"@Debug_New_Single_User"},
+             //   tags = {"@Debug_New_Single_User"},
                 plugin = {"pretty",
                         "json:target/CourgetteHtmlReport/cucumber-report/cucumber.json",
                         "html:target/CourgetteHtmlReport/cucumber-report/cucumber.html"},
@@ -62,5 +68,19 @@ public class CourgetteRunner {
 
 
 public class CourgetteRunner extends TestNGCourgette {
+
+        @AfterClass
+        public void tearDownFolder() throws IOException {
+
+                /* Removing build folder where screenshot is getting saved,
+                don't need it once it converted to base64
+                 */
+                String path = System.getProperty("user.dir");
+                File index = new File(path + "/build");
+                FileUtils.deleteDirectory(new File(String.valueOf(index)));
+
+
+
+        }
 
 }

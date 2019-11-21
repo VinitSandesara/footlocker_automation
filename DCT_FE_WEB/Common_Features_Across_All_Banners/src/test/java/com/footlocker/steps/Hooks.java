@@ -109,6 +109,7 @@ public class Hooks {
             String base64Image = screenshot.getScreenshotAs(OutputType.BASE64);
             byte[] htmlImage = ("<img class=\"col-lg-12\" src=\"data:image/png;base64," + base64Image + "\">").getBytes();
             getScenario().embed(htmlImage, "text/html");
+
         }
 
     /* Option: 1
