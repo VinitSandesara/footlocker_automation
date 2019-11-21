@@ -27,7 +27,7 @@
         <allure-cucumber.version>1.6.3</allure-cucumber.version>
         <allure-maven.version>2.8</allure-maven.version>
         <slf4j.version>1.7.21</slf4j.version>
-        <courgette.version>4.0.2-snapshot</courgette.version>
+        <courgette.version>4.0.3-snapshot</courgette.version>
         <extentreport.version>3.1.5</extentreport.version>
     </properties>
 

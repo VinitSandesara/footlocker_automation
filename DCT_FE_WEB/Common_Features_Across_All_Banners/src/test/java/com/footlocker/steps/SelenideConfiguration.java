@@ -50,7 +50,7 @@ public class SelenideConfiguration {
 
 
 
-        /* Option : 2
+        /* Option : 2  */
         Map<String, Object> prefs = new HashMap<String, Object>();
         prefs.put("profile.default_content_setting_values.notifications", 2);
 
@@ -68,13 +68,13 @@ public class SelenideConfiguration {
         Configuration.timeout = 20000;
       //  Configuration.baseUrl = "https://www.staging2.origin.footlocker.com/";
       //  driver.get(Configuration.baseUrl);
-        WebDriverRunner.setWebDriver(driver);   */
+        WebDriverRunner.setWebDriver(driver);
 
 
 
         /* ============ Option 3 - BrowserStack ============ */
 
-    /* MAC - CHROME */
+    /* MAC - CHROME
 
         DesiredCapabilities caps = new DesiredCapabilities();
 
@@ -91,7 +91,7 @@ public class SelenideConfiguration {
         caps.setCapability("browserstack.debug", "true");
         caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         caps.setCapability("build", "New_User_Register");
-        caps.setCapability("name", TestCaseName + "_CHROME");
+        caps.setCapability("name", TestCaseName + "_CHROME"); */
 
 
     /* MAC - FIREFOX
@@ -144,7 +144,7 @@ public class SelenideConfiguration {
         caps.setCapability("name", TestCaseName + "_WINDOWS_FIREFOX"); */
 
 
-        /* do not forget to uncomment this when running thru browserstack */
+        /* do not forget to uncomment this when running thru browserstack
         try {
             driver = new RemoteWebDriver(new URL(URL), caps);
         } catch (MalformedURLException e) {
@@ -153,7 +153,7 @@ public class SelenideConfiguration {
 
         Configuration.timeout = 20000;
 
-        WebDriverRunner.setWebDriver(driver);
+        WebDriverRunner.setWebDriver(driver); */
 
 
     }
