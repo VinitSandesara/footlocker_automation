@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="816a8cf9-23d3-4831-b388-5eb229be5076" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aventstack_extentreports_3_1_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_3_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/Commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/Commons.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/ExtentReport/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/ExtentReport/ExtentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/ExtentReport/ExtentTestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/ExtentReport/ExtentTestManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/Common_Features_Across_All_Banners.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/Common_Features_Across_All_Banners.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CourgetteRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CourgetteRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/SelenideConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/SelenideConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/DCT_FE_WEB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/DCT_FE_WEB.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/FLCA_Specific_Features/FLCA_Specific_Features.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/FLCA_Specific_Features/FLCA_Specific_Features.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Footlocker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Footlocker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +29,7 @@
     <option name="myAddOrReplace" value="2" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="458" />
+    <option name="myElementSize" value="364" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -48,7 +61,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573163601774" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Commons/src/main/resources/META-INF/services" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -70,7 +83,7 @@
       <recent name="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CourgetteRunner">
+  <component name="RunManager" selected="JUnit.DebugRunner">
     <configuration name="CourgetteJunitRunner" type="JUnit" factoryName="JUnit">
       <module name="Common_Features_Across_All_Banners" />
       <option name="PACKAGE_NAME" value="com.footlocker.runner" />
@@ -196,66 +209,78 @@
       <screen x="0" y="23" width="2048" height="1004" />
     </state>
     <state x="592" y="241" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.2048.1004@0.23.2048.1004" timestamp="1573947982329" />
-    <state width="2304" height="851" key="GridCell.Tab.0.bottom" timestamp="1574354489454">
-      <screen x="0" y="23" width="2560" height="1362" />
+    <state width="2304" height="586" key="GridCell.Tab.0.bottom" timestamp="1574708291170">
+      <screen x="0" y="23" width="2560" height="1368" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.bottom/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012085" />
     <state width="1848" height="404" key="GridCell.Tab.0.bottom/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351022" />
     <state width="1797" height="640" key="GridCell.Tab.0.bottom/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242145" />
+    <state width="1907" height="594" key="GridCell.Tab.0.bottom/0.23.2048.1008@0.23.2048.1008" timestamp="1574470638929" />
     <state width="2304" height="851" key="GridCell.Tab.0.bottom/0.23.2560.1362@0.23.2560.1362" timestamp="1574354489454" />
-    <state width="2304" height="851" key="GridCell.Tab.0.center" timestamp="1574354489453">
-      <screen x="0" y="23" width="2560" height="1362" />
+    <state width="2304" height="586" key="GridCell.Tab.0.bottom/0.23.2560.1368@0.23.2560.1368" timestamp="1574708291170" />
+    <state width="2304" height="586" key="GridCell.Tab.0.center" timestamp="1574708291169">
+      <screen x="0" y="23" width="2560" height="1368" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.center/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012084" />
     <state width="1848" height="404" key="GridCell.Tab.0.center/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351021" />
     <state width="1797" height="640" key="GridCell.Tab.0.center/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242144" />
+    <state width="1907" height="594" key="GridCell.Tab.0.center/0.23.2048.1008@0.23.2048.1008" timestamp="1574470638928" />
     <state width="2304" height="851" key="GridCell.Tab.0.center/0.23.2560.1362@0.23.2560.1362" timestamp="1574354489453" />
-    <state width="2304" height="851" key="GridCell.Tab.0.left" timestamp="1574354489452">
-      <screen x="0" y="23" width="2560" height="1362" />
+    <state width="2304" height="586" key="GridCell.Tab.0.center/0.23.2560.1368@0.23.2560.1368" timestamp="1574708291169" />
+    <state width="2304" height="586" key="GridCell.Tab.0.left" timestamp="1574708291168">
+      <screen x="0" y="23" width="2560" height="1368" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.left/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012084" />
     <state width="1848" height="404" key="GridCell.Tab.0.left/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351021" />
     <state width="1797" height="640" key="GridCell.Tab.0.left/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242144" />
+    <state width="1907" height="594" key="GridCell.Tab.0.left/0.23.2048.1008@0.23.2048.1008" timestamp="1574470638927" />
     <state width="2304" height="851" key="GridCell.Tab.0.left/0.23.2560.1362@0.23.2560.1362" timestamp="1574354489452" />
-    <state width="2304" height="851" key="GridCell.Tab.0.right" timestamp="1574354489454">
-      <screen x="0" y="23" width="2560" height="1362" />
+    <state width="2304" height="586" key="GridCell.Tab.0.left/0.23.2560.1368@0.23.2560.1368" timestamp="1574708291168" />
+    <state width="2304" height="586" key="GridCell.Tab.0.right" timestamp="1574708291170">
+      <screen x="0" y="23" width="2560" height="1368" />
     </state>
     <state width="1848" height="640" key="GridCell.Tab.0.right/0.23.2048.1002@0.23.2048.1002" timestamp="1574026012085" />
     <state width="1848" height="404" key="GridCell.Tab.0.right/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351022" />
     <state width="1797" height="640" key="GridCell.Tab.0.right/0.23.2048.1004@0.23.2048.1004" timestamp="1574031242145" />
+    <state width="1907" height="594" key="GridCell.Tab.0.right/0.23.2048.1008@0.23.2048.1008" timestamp="1574470638928" />
     <state width="2304" height="851" key="GridCell.Tab.0.right/0.23.2560.1362@0.23.2560.1362" timestamp="1574354489454" />
-    <state width="2304" height="586" key="GridCell.Tab.1.bottom" timestamp="1574111242168">
-      <screen x="0" y="23" width="2560" height="1362" />
+    <state width="2304" height="586" key="GridCell.Tab.0.right/0.23.2560.1368@0.23.2560.1368" timestamp="1574708291170" />
+    <state width="2304" height="586" key="GridCell.Tab.1.bottom" timestamp="1574708291172">
+      <screen x="0" y="23" width="2560" height="1368" />
     </state>
     <state width="1848" height="404" key="GridCell.Tab.1.bottom/0.23.2048.1002@0.23.2048.1002" timestamp="1574025801037" />
     <state width="1848" height="404" key="GridCell.Tab.1.bottom/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351023" />
     <state width="1848" height="405" key="GridCell.Tab.1.bottom/0.23.2048.1004@0.23.2048.1004" timestamp="1574022111925" />
     <state width="1848" height="405" key="GridCell.Tab.1.bottom/0.23.2048.1005@0.23.2048.1005" timestamp="1573960142167" />
     <state width="2304" height="586" key="GridCell.Tab.1.bottom/0.23.2560.1362@0.23.2560.1362" timestamp="1574111242168" />
-    <state width="2304" height="586" key="GridCell.Tab.1.center" timestamp="1574111242167">
-      <screen x="0" y="23" width="2560" height="1362" />
+    <state width="2304" height="586" key="GridCell.Tab.1.bottom/0.23.2560.1368@0.23.2560.1368" timestamp="1574708291172" />
+    <state width="2304" height="586" key="GridCell.Tab.1.center" timestamp="1574708291171">
+      <screen x="0" y="23" width="2560" height="1368" />
     </state>
     <state width="1848" height="404" key="GridCell.Tab.1.center/0.23.2048.1002@0.23.2048.1002" timestamp="1574025801037" />
     <state width="1848" height="404" key="GridCell.Tab.1.center/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351022" />
     <state width="1848" height="405" key="GridCell.Tab.1.center/0.23.2048.1004@0.23.2048.1004" timestamp="1574022111925" />
     <state width="1848" height="405" key="GridCell.Tab.1.center/0.23.2048.1005@0.23.2048.1005" timestamp="1573960142167" />
     <state width="2304" height="586" key="GridCell.Tab.1.center/0.23.2560.1362@0.23.2560.1362" timestamp="1574111242167" />
-    <state width="2304" height="586" key="GridCell.Tab.1.left" timestamp="1574111242167">
-      <screen x="0" y="23" width="2560" height="1362" />
+    <state width="2304" height="586" key="GridCell.Tab.1.center/0.23.2560.1368@0.23.2560.1368" timestamp="1574708291171" />
+    <state width="2304" height="586" key="GridCell.Tab.1.left" timestamp="1574708291171">
+      <screen x="0" y="23" width="2560" height="1368" />
     </state>
     <state width="1848" height="404" key="GridCell.Tab.1.left/0.23.2048.1002@0.23.2048.1002" timestamp="1574025801036" />
     <state width="1848" height="404" key="GridCell.Tab.1.left/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351022" />
     <state width="1848" height="405" key="GridCell.Tab.1.left/0.23.2048.1004@0.23.2048.1004" timestamp="1574022111925" />
     <state width="1848" height="405" key="GridCell.Tab.1.left/0.23.2048.1005@0.23.2048.1005" timestamp="1573960142167" />
     <state width="2304" height="586" key="GridCell.Tab.1.left/0.23.2560.1362@0.23.2560.1362" timestamp="1574111242167" />
-    <state width="2304" height="586" key="GridCell.Tab.1.right" timestamp="1574111242168">
-      <screen x="0" y="23" width="2560" height="1362" />
+    <state width="2304" height="586" key="GridCell.Tab.1.left/0.23.2560.1368@0.23.2560.1368" timestamp="1574708291171" />
+    <state width="2304" height="586" key="GridCell.Tab.1.right" timestamp="1574708291172">
+      <screen x="0" y="23" width="2560" height="1368" />
     </state>
     <state width="1848" height="404" key="GridCell.Tab.1.right/0.23.2048.1002@0.23.2048.1002" timestamp="1574025801037" />
     <state width="1848" height="404" key="GridCell.Tab.1.right/0.23.2048.1003@0.23.2048.1003" timestamp="1574032351023" />
     <state width="1848" height="405" key="GridCell.Tab.1.right/0.23.2048.1004@0.23.2048.1004" timestamp="1574022111925" />
     <state width="1848" height="405" key="GridCell.Tab.1.right/0.23.2048.1005@0.23.2048.1005" timestamp="1573960142167" />
     <state width="2304" height="586" key="GridCell.Tab.1.right/0.23.2560.1362@0.23.2560.1362" timestamp="1574111242168" />
+    <state width="2304" height="586" key="GridCell.Tab.1.right/0.23.2560.1368@0.23.2560.1368" timestamp="1574708291172" />
     <state x="173" y="23" key="SettingsEditor" timestamp="1573948061216">
       <screen x="0" y="23" width="2048" height="1004" />
     </state>
@@ -310,10 +335,10 @@
     <SUITE FILE_PATH="coverage/Footlocker$TestRunner.ic" NAME="TestRunner Coverage Results" MODIFIED="1573581126489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.footlocker.runner.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Footlocker$DebugRunner.ic" NAME="DebugRunner Coverage Results" MODIFIED="1574351587099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Footlocker$CourgetteRunner.ic" NAME="CourgetteRunner Coverage Results" MODIFIED="1574354469059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.footlocker.runner.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Footlocker$DebugRunner.ic" NAME="DebugRunner Coverage Results" MODIFIED="1574470634227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="masterDetails">
     <states>

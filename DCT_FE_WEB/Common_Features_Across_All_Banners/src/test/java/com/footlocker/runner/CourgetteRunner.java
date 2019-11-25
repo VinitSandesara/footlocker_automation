@@ -79,6 +79,9 @@ public class CourgetteRunner extends TestNGCourgette {
                 File index = new File(path + "/build");
                 FileUtils.deleteDirectory(new File(String.valueOf(index)));
 
+             /*   ExtentTestManager.endTest();
+                ExtentManager.getInstance().flush();*/
+
 
 
         }

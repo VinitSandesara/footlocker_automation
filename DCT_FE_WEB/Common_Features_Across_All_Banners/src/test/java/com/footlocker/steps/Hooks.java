@@ -2,6 +2,8 @@ package com.footlocker.steps;
 
 
 
+import ExtentReport.ExtentManager;
+import ExtentReport.ExtentTestManager;
 import com.codeborne.selenide.WebDriverRunner;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.After;
@@ -58,7 +60,7 @@ public class Hooks {
 
         addScenario(scenario);
 
-       // ExtentTestManager.startTest(getScenario().getName());
+        ExtentTestManager.startTest(getScenario().getName());
 
         selenideConfiguration.getBrowser(scenario.getName());
 
@@ -117,6 +119,9 @@ public class Hooks {
 
         /* Option: 2 */
         WebDriverRunner.getWebDriver().quit();
+
+        ExtentTestManager.endTest();
+        ExtentManager.getInstance().flush();
 
 
     }
