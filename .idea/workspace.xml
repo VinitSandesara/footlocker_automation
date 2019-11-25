@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="816a8cf9-23d3-4831-b388-5eb229be5076" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aventstack_extentreports_3_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/Commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/Commons.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/ExtentReport/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/ExtentReport/ExtentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commons/src/main/java/ExtentReport/ExtentTestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commons/src/main/java/ExtentReport/ExtentTestManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/Common_Features_Across_All_Banners.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/Common_Features_Across_All_Banners.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CourgetteRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/CourgetteRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/steps/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/DCT_FE_WEB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/DCT_FE_WEB.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCT_FE_WEB/FLCA_Specific_Features/FLCA_Specific_Features.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DCT_FE_WEB/FLCA_Specific_Features/FLCA_Specific_Features.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Footlocker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Footlocker.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="816a8cf9-23d3-4831-b388-5eb229be5076" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,19 +50,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/target/CourgetteHtmlReport/courgette-report" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Commons/src/main/resources/META-INF/services" />
+      <recent name="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/resources/META-INF/services" />
+      <recent name="$PROJECT_DIR$/Commons/src/main/resources" />
+      <recent name="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.footlocker.Backup_StepsDef" />
       <recent name="com.footlocker.runner" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Commons/src/main/resources/META-INF/services" />
-      <recent name="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/resources/META-INF/services" />
-      <recent name="$PROJECT_DIR$/Commons/src/main/resources" />
-      <recent name="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/main/resources" />
-      <recent name="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/src/test/java/com/footlocker/runner" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/DCT_FE_WEB/Common_Features_Across_All_Banners/target/CourgetteHtmlReport/courgette-report" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.DebugRunner">
